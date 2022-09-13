@@ -3,11 +3,11 @@
     padding: 0;
 }
 
-
+/*AQUI INICIA EL BOTTON DE WHATSAPP  */
 .main-whatsapp-botton-container {
     width: 100vw;
     display: flex;
-    margin-top: 92vh;
+    margin-top: 25vh;
     justify-content: center;
     max-width: 414px;
     min-width: 350px;
@@ -33,9 +33,7 @@
     text-decoration: none;
     color: white;
     font-weight: 100;
-    
     text-align: center;
-
 }
 
 .whatsapp-text-bold {
@@ -54,3 +52,35 @@
     padding-left: 2%;
 }
 
+/*AQUI TERMINA EL BOTTON DE WHATSAPP  */
+
+/*AQUI INICIA EL BOTTON DE COTIZACION  */
+.main-cotiza-botton-container {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    margin-top: 30vh;
+}
+
+.cotiza-botton-container {
+    background-color: orange;
+    height: 40vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100px 0px 0% 100px;
+    justify-content: center;
+}
+
+.cotiza-text {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    text-align: unset;
+    writing-mode: vertical-lr;
+}
+
+
+
+/*AQUI TERMINA EL BOTTON DE COTIZACION  */
