@@ -1,3 +1,56 @@
-.cotiza-botton-container {
-    background-color: green;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+
+.main-whatsapp-botton-container {
+    width: 100vw;
+    display: flex;
+    margin-top: 92vh;
+    justify-content: center;
+    max-width: 414px;
+    min-width: 350px;
+}
+
+
+.whatsapp-botton-container {
+    background-color: #00bb2d;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100vw;
+    border-radius: 100px 100px 0% 0%;
+    max-width: 414px;
+    min-width: 350px;
+    
+}
+
+.whatsapp-text {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    
+    text-align: center;
+
+}
+
+.whatsapp-text-bold {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    padding-left: 2%;
+    text-align: center;
+}
+
+
+.whatsapp-icon {
+    width: 6%;
+    padding: 0% 8% 0% 0%;
+    text-align: start;
+    padding-left: 2%;
+}
+
