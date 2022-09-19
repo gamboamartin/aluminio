@@ -27,15 +27,55 @@
 
 /*AQUI INICIA EL CARRUSEL  */
 .carrusel-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    width: 100vw;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.carrusel-element {
+    width: 50px;
+    height: 400px;
+}
+
+.carrusel-element_1 {
+    background-image: url(../20211005_122123.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.carrusel-element_2 {
+    background-image: url(../20220114_124325.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.carrusel-element_3 {
+    background-image: url(../20220609_135949.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.carrusel-element_4 {
+    background-image: url(../IMG20220615165908.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.carrusel-element_5 {
+    background-image: url(../IMG20220715142720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 
-.carrusel-element-1 img {
-    width: 100vw;
-}
 /*AQUI TERMINA EL CARRUSEL  */
 
 
@@ -46,21 +86,22 @@
     justify-content: center;
     position: absolute;
     z-index: 10;
-    margin-top: -4vh;
+    margin-bottom: 100vh;
+    background-color: red;
 }
 
 
 .whatsapp-botton-container {
     background: linear-gradient(180deg, #70ba77, #5aa261);
     border: 1px solid #a6ddaa;
-    border-bottom: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     width: 100vw;
-    min-width: 314px;
+    height: 2vh;
+    min-width: 310px;
     border-radius: 100px 100px 0% 0%;
     padding-bottom: 1.5%;
     padding-top: 1.5%;
@@ -78,7 +119,6 @@
     font-size: 1.5rem;
     padding-left: 4px;
 }
-
 
 .whatsapp-icon {
     width: 20px;
