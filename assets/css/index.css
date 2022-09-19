@@ -13,27 +13,40 @@
 .header-main-container {
     display: flex;
     width: 100%;
-    height: 20vh;
+    height: 0vh;
 }
 
 .header-logo-container img {
     width: 160px;
-    margin: 10%;
+    margin: 5%;
+    position: absolute;
+    z-index: 10;
 }
 
 /*AQUI TERMINA EL HEADER  */
 
+/*AQUI INICIA EL CARRUSEL  */
+.carrusel-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
 
 
 .carrusel-element-1 img {
     width: 100vw;
 }
+/*AQUI TERMINA EL CARRUSEL  */
+
+
 /*AQUI INICIA EL BOTTON DE WHATSAPP  */
 .main-whatsapp-botton-container {
     display: flex;
     width: 100vw;
     justify-content: center;
-    margin-top: 26vh;
+    position: absolute;
+    z-index: 10;
+    margin-top: -4vh;
 }
 
 
@@ -49,8 +62,8 @@
     width: 100vw;
     min-width: 314px;
     border-radius: 100px 100px 0% 0%;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -76,23 +89,24 @@
 
 /*AQUI INICIA EL BOTTON DE COTIZACION  */
 .main-cotiza-botton-container {
-    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 20;
     display: flex;
     justify-content: end;
-    margin-top: 10vh;
+    align-items: center;
 }
 
 .cotiza-botton-container {
     background: linear-gradient(-180deg, #cb6538, #ad6733);
     border: 1px solid #be5637;
-    border-bottom: 0px;
-    height: 40vh;
-    width: 10vw;
+    height: 40%;
     display: flex;
     align-items: center;
     text-decoration: none;
     border-radius: 100px 0px 0% 100px;
-    justify-content: center;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
 }
 
 .cotiza-text {
