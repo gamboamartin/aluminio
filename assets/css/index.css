@@ -62,7 +62,7 @@
     background-image: url(../20211005_122123.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: none;
 }
 
@@ -70,23 +70,24 @@
     background-image: url(../20220114_124325.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: none;
+    
 }
 
 .carrusel-element_3 {
     background-image: url(../20220609_135949.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    display: none;
+    background-size: cover;
+    
 }
 
 .carrusel-element_4 {
     background-image: url(../IMG20220615165908.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: none;
 }
 
@@ -94,9 +95,10 @@
     background-image: url(../IMG20220715142720.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: none;
 }
+
 
 
 /*AQUI TERMINA EL CARRUSEL  */
@@ -109,7 +111,7 @@
     justify-content: center;
     position: absolute;
     z-index: 15;
-    top: 96.5vh;
+    top: 95.5vh;
 }
 
 
@@ -122,7 +124,6 @@
     justify-content: center;
     text-decoration: none;
     width: 100vw;
-    height: 2vh;
     min-width: 250px;
     border-radius: 100px 100px 0% 0%;
     padding-bottom: 1.5%;
@@ -155,7 +156,7 @@
     width: 100vw;
     position: absolute;
     z-index: 20;
-    top: 2vh;
+    top: 0vh;
     margin-bottom: 100vh;
     display: flex;
     justify-content: end;
