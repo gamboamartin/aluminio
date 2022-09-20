@@ -126,6 +126,7 @@
     justify-content: center;
     text-decoration: none;
     width: 100vw;
+    max-width: 500px;
     height: 5vh;
     min-width: 250px;
     border-radius: 100px 100px 0% 0%;
