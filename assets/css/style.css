@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0%;
@@ -41,11 +41,37 @@
 }
 
 /*AQUI TERMINA EL HEADER  */
-
-/*AQUI INICIA EL CARRUSEL  */
-.carrusel-container {
+.general_view {
     width: 100vw;
     height: 100vh;
+}
+
+.youtube_channel_container {
+    background-color: #ececed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube_data_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.youtube_data_text_1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+.youtube_data_text_2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+/*AQUI INICIA EL CARRUSEL  */
+.carrusel-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
