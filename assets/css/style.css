@@ -71,7 +71,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: none;
+    
     
 }
 
@@ -80,7 +80,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    display: none;
 }
 
 .carrusel-element_4 {
@@ -111,25 +111,27 @@
     justify-content: center;
     position: absolute;
     z-index: 15;
-    top: 95.5vh;
+    top: 95vh;
 }
 
 
 .whatsapp-botton-container {
     background: linear-gradient(180deg, #70ba77, #5aa261);
-    border: 1px solid #a6ddaa;
+    border-bottom: 0px solid;
+    border-left: 3px solid #5aa261 ;
+    border-right: 3px solid #70ba77 ;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     width: 100vw;
+    height: 5vh;
     min-width: 250px;
     border-radius: 100px 100px 0% 0%;
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
 }
 
 .whatsapp-text {
@@ -165,14 +167,15 @@
 
 .cotiza-botton-container {
     background: linear-gradient(-180deg, #cb6538, #ad6733);
-    border: 1px solid #be5637;
+    border-top: 3px solid #ad6733;
+    border-bottom: 3px solid #ad6733;
+    border-left: 3px solid #cb6538;
+    border-right: 0px solid;
     height: 40vh;
     display: flex;
     align-items: center;
     text-decoration: none;
     border-radius: 100px 0px 0% 100px;
-    padding-right: 0.5%;
-    padding-left: 0.5%;
 }
 
 .cotiza-text {
