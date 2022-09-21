@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0%;
@@ -11,7 +11,7 @@
 
 /*AQUI INICIA EL HEADER  */
 .header-main-container {
-    position: absolute;
+    position: fixed;
     display: flex;
     z-index: 20;
     width: 100%;
@@ -41,11 +41,37 @@
 }
 
 /*AQUI TERMINA EL HEADER  */
-
-/*AQUI INICIA EL CARRUSEL  */
-.carrusel-container {
+.general_view {
     width: 100vw;
     height: 100vh;
+}
+
+.youtube_channel_container {
+    background-color: #ececed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube_data_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.youtube_data_text_1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+.youtube_data_text_2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+/*AQUI INICIA EL CARRUSEL  */
+.carrusel-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +97,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: none;
+    
     
 }
 
@@ -80,7 +106,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+<<<<<<< HEAD:assets/css/index.css
     display: none;   
+=======
+    display: none;
+>>>>>>> 21929e925dbe44c18da4f1b850de40ca3e43a3d6:assets/css/style.css
 }
 
 .carrusel-element_4 {
@@ -108,27 +138,30 @@
     display: flex;
     width: 100vw;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     z-index: 15;
-    top: 95.5vh;
+    top: 95vh;
 }
 
 
 .whatsapp-botton-container {
     background: linear-gradient(180deg, #70ba77, #5aa261);
-    border: 1px solid #a6ddaa;
+    border-bottom: 0px solid;
+    border-left: 3px solid #5aa261 ;
+    border-right: 3px solid #70ba77 ;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     width: 100vw;
+    max-width: 500px;
+    height: 5vh;
     min-width: 250px;
     border-radius: 100px 100px 0% 0%;
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
 }
 
 .whatsapp-text {
@@ -153,7 +186,7 @@
 .main-cotiza-botton-container {
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     z-index: 20;
     top: 0vh;
     margin-bottom: 100vh;
@@ -164,14 +197,15 @@
 
 .cotiza-botton-container {
     background: linear-gradient(-180deg, #cb6538, #ad6733);
-    border: 1px solid #be5637;
+    border-top: 3px solid #ad6733;
+    border-bottom: 3px solid #ad6733;
+    border-left: 3px solid #cb6538;
+    border-right: 0px solid;
     height: 40vh;
     display: flex;
     align-items: center;
     text-decoration: none;
     border-radius: 100px 0px 0% 100px;
-    padding-right: 0.5%;
-    padding-left: 0.5%;
 }
 
 .cotiza-text {
