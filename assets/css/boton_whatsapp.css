@@ -1,0 +1,40 @@
+.whatsapp-botton-container {
+    background: linear-gradient(180deg, #70ba77, #5aa261);
+    border-bottom: 0px solid;
+    border-left: 3px solid #5aa261 ;
+    border-right: 3px solid #70ba77 ;
+    display: flex;
+    z-index: 20;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100vw;
+    max-width: 500px;
+    min-width: auto;
+    height: 5vh;
+    border-radius: 100px 100px 0% 0%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.whatsapp-text {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.whatsapp-text-bold {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    padding-left: 6px;
+}
+
+
+

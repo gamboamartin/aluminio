@@ -1,0 +1,28 @@
+.header-main-container {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 100vw;
+    height: 10vh;
+}
+
+.header-logo-container  {
+    width: 50%;
+}
+
+.header-logo-container img {
+    width: 160px;
+    margin: 5%;
+}
+
+.header-menubotton-container {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin: 3%;
+}
+
+.header-menubotton-container button {
+    width: 40%;
+    height: 50%;
+}
