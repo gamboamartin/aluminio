@@ -18,6 +18,7 @@
 .youtube_channel_container {
     background-color: #ececed;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -41,63 +42,12 @@
 }
 
 
-/*AQUI INICIA EL CARRUSEL  */
-.carrusel-container {
+.videos-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrusel-element {
     width: 100%;
-    height: 100%;
-   
+    height: 25vh;
 }
 
-.carrusel-element_1 {
-    background-image: url(../20211005_122123.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;
-}
-
-.carrusel-element_2 {
-    background-image: url(../20220114_124325.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;  
-    
-}
-
-.carrusel-element_3 {
-    background-image: url(../20220609_135949.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;   
-}
-
-.carrusel-element_4 {
-    background-image: url(../IMG20220615165908.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.carrusel-element_5 {
-    background-image: url(../IMG20220715142720.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;
-}
-
-
-
-/*AQUI TERMINA EL CARRUSEL  */
 
 
 
