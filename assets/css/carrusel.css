@@ -1,64 +1,11 @@
-
-.carrusel-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.carrusel-main-container {
+    width: 100vw;
+    height: 100vh;
 }
 
-.carrusel-element {
-    width: 100%;
-    height: 100%;
-   
-}
 
-.carrusel-element_1 {
-    background-image: url(../main-carrusel-fotos/20211005_122123.jpg);
+.carousel-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: none;
-}
-
-.carrusel-element_2 {
-    background-image: url(../main-carrusel-fotos/20220114_124325.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;  
-    
-}
-
-.carrusel-element_3 {
-    background-image: url(../main-carrusel-fotos/20220609_135949.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;   
-}
-
-.carrusel-element_4 {
-    background-image: url(../main-carrusel-fotos/IMG20220615165908.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.carrusel-element_5 {
-    background-image: url(../main-carrusel-fotos/IMG20220715142720.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;
-}
-
-
-
-
-.carrusel-element {
-    position: display block;
-    border-radius: 100%;
-    background-color: red;
-    width: 10px;
-    z-index: 40;
 }
