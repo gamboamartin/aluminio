@@ -1,19 +1,16 @@
-.general_view {
-    width: 100vw;
-    height: 100vh;
-}
-
 .youtube_channel_container {
     background-color: #ececed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10vh;
 }
 
-.youtube-text-container {
+.youtube_data {
     height: 40vh;
-    padding-top: 15vh;
 
 }
 
@@ -21,9 +18,9 @@
     text-align: center;
 }
 
-.youtube-icon img {
-    width: 50%;
-    
+.youtube-icon-img {
+    width: 40%;
+    margin: 5%;
 }
 
 .youtube_data_text {
@@ -56,19 +53,44 @@
     text-align: center;
 }
 
-.videos-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+.main-plans-container{
+    padding-top: 10%;
+    z-index: 90;
     height: 60vh;
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
 }
 
-.video-element {
-    background-color: red;
-    width: 40vw;
-    height: 15vh;
-    border-radius: 10px;
-    box-shadow:#000000 30px;
+.plans-container--slider{
+    display: flex;
+    gap: 5px;
+    height: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 60vw;
+    height: 15vh;
+    min-width: 190px;
+    max-width: 300px;
+    margin: 50px 5px 0;
+}
+
+
+.plans-container--card img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 8px rgb(90, 73, 30, 0.16);
+    width: 100%;
+}
+
+
+
+
