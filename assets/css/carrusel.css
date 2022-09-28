@@ -9,3 +9,8 @@
     background-position: center;
     background-size: cover;
 }
+
+.carousel-image-short {
+    width: 100vw;
+    height: 100vh;
+}

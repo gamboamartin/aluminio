@@ -1,10 +1,5 @@
 Ajustar fuentes en la view youtube para que sea identica al diseño
 Ajustar boton del header
-Ajustar Cruce de carrusel con boton de whatsapp y cotiza
-Desarollar view proceso
 Desarollar view google maps 
-Desarollar view productos
 Ajustar color fondo
-Ajustar color del borde de boton cotizacion
 Desarollar animacion de boton header
-Desarollar animacion de Scroll en x en youtube view
