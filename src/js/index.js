@@ -1,5 +1,6 @@
 $('.carousel').carousel({
-    interval: 100
+    interval: 100,
+    number: 4
 })
 
 
