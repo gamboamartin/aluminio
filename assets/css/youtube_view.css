@@ -1,26 +1,17 @@
 .youtube_channel_container {
-    background-color: #ececed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfdfdf;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 10vh;
 }
 
 .youtube_data {
-    height: 40vh;
-
-}
-
-.youtube-icon {
-    text-align: center;
-}
-
-.youtube-icon-img {
-    width: 40%;
-    margin: 5%;
+    height: 60vh;
+    width: 100vw;
+    padding-top: 15vh;
 }
 
 .youtube_data_text {
@@ -40,7 +31,7 @@
 
 .youtube_data_text_2 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 1100;
+    font-weight: 2200;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 11px;
@@ -53,10 +44,18 @@
     text-align: center;
 }
 
+.youtube-icon {
+    text-align: center;
+}
+
+.youtube-icon-img {
+    width: 40%;
+    margin: 5%;
+}
+
 .main-plans-container{
-    padding-top: 10%;
-    z-index: 90;
-    height: 60vh;
+    z-index: 10;
+    height: 40vh;
     width: 100%;
     min-width: 320px;
     text-align: center;
@@ -72,7 +71,6 @@
 }
 
 .plans-container--card {
-    position: relative;
     scroll-snap-align: center;
     width: 60vw;
     height: 15vh;
