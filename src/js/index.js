@@ -5,38 +5,77 @@ $('.carousel').carousel({
 
 
 
-$('.open-overlay').click(function() {
-    var overlay_navigation = $('.overlay-navigation'),
-      nav_item_1 = $('nav li:nth-of-type(1)'),
-      nav_item_2 = $('nav li:nth-of-type(2)'),
-      nav_item_3 = $('nav li:nth-of-type(3)'),
-      nav_item_4 = $('nav li:nth-of-type(4)'),
-      nav_item_5 = $('nav li:nth-of-type(5)'),
-      top_bar = $('.bar-top'),
-      middle_bar = $('.bar-middle'),
-      bottom_bar = $('.bar-bottom');
-  
-    overlay_navigation.toggleClass('overlay-active');
-    if (overlay_navigation.hasClass('overlay-active')) {
-  
-      top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
-      middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
-      bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
-      overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
-      nav_item_1.removeClass('slide-in-nav-item-reverse').addClass('slide-in-nav-item');
-      nav_item_2.removeClass('slide-in-nav-item-delay-1-reverse').addClass('slide-in-nav-item-delay-1');
-      nav_item_3.removeClass('slide-in-nav-item-delay-2-reverse').addClass('slide-in-nav-item-delay-2');
-      nav_item_4.removeClass('slide-in-nav-item-delay-3-reverse').addClass('slide-in-nav-item-delay-3');
-      nav_item_5.removeClass('slide-in-nav-item-delay-4-reverse').addClass('slide-in-nav-item-delay-4');
+var carousel = document.querySelector('.carousel');
+var cells = carousel.querySelectorAll('.carousel__cell');
+var cellCount; // cellCount set from cells-range input value
+var selectedIndex = 0;
+var cellWidth = carousel.offsetWidth;
+var cellHeight = carousel.offsetHeight;
+var isHorizontal = true;
+var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+var radius, theta;
+// console.log( cellWidth, cellHeight );
+
+function rotateCarousel() {
+  var angle = theta * selectedIndex * -1;
+  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+    rotateFn + '(' + angle + 'deg)';
+}
+
+var prevButton = document.querySelector('.previous-button');
+prevButton.addEventListener( 'click', function() {
+  selectedIndex--;
+  rotateCarousel();
+});
+
+var nextButton = document.querySelector('.next-button');
+nextButton.addEventListener( 'click', function() {
+  selectedIndex++;
+  rotateCarousel();
+});
+
+var cellsRange = document.querySelector('.cells-range');
+cellsRange.addEventListener( 'change', changeCarousel );
+cellsRange.addEventListener( 'input', changeCarousel );
+
+
+
+function changeCarousel() {
+  cellCount = cellsRange.value;
+  theta = 360 / cellCount;
+  var cellSize = isHorizontal ? cellWidth : cellHeight;
+  radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+  for ( var i=0; i < cells.length; i++ ) {
+    var cell = cells[i];
+    if ( i < cellCount ) {
+      // visible cell
+      cell.style.opacity = 1;
+      var cellAngle = theta * i;
+      cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
     } else {
-      top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
-      middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
-      bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
-      overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
-      nav_item_1.removeClass('slide-in-nav-item').addClass('slide-in-nav-item-reverse');
-      nav_item_2.removeClass('slide-in-nav-item-delay-1').addClass('slide-in-nav-item-delay-1-reverse');
-      nav_item_3.removeClass('slide-in-nav-item-delay-2').addClass('slide-in-nav-item-delay-2-reverse');
-      nav_item_4.removeClass('slide-in-nav-item-delay-3').addClass('slide-in-nav-item-delay-3-reverse');
-      nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
+      // hidden cell
+      cell.style.opacity = 0;
+      cell.style.transform = 'none';
     }
-  })
+  }
+
+  rotateCarousel();
+}
+
+var orientationRadios = document.querySelectorAll('input[name="orientation"]');
+( function() {
+  for ( var i=0; i < orientationRadios.length; i++ ) {
+    var radio = orientationRadios[i];
+    radio.addEventListener( 'change', onOrientationChange );
+  }
+})();
+
+function onOrientationChange() {
+  var checkedRadio = document.querySelector('input[name="orientation"]:checked');
+  isHorizontal = checkedRadio.value == 'horizontal';
+  rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+  changeCarousel();
+}
+
+// set initials
+onOrientationChange();

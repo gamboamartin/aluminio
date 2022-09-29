@@ -1,5 +1,5 @@
-Ajustar fuentes en la view youtube para que sea identica al diseño
-Ajustar boton del header
-Desarollar view google maps 
-Ajustar color fondo
-Desarollar animacion de boton header
+Ajustar fuentes en la view youtube para que sea identica al diseño -en proceso cesar 
+Desarollar view google maps - en proceso javier 
+Desarollar animacion de boton header - en proceso javier 
+desarollar animacion de proceso de compra
+desarollar view productos - en proceso javier
