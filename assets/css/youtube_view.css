@@ -1,7 +1,7 @@
 .youtube_channel_container {
     width: 100vw;
     height: 105vh;
-    background-color: #dfdfdf;
+    background-color: #ececec;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,34 +11,42 @@
 .youtube_data {
     height: 60vh;
     width: 100vw;
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 
 .youtube_data_text {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
+    font-size: 5rem;
 }
 
 .youtube_data_text_1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
 }
 
 .youtube_data_text_2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 2200;
-    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
     text-align: center;
-    letter-spacing: 11px;
+    letter-spacing: 1px;
+}
+.suscriptores_contador {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .vistas_contador {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 2rem;
     text-align: center;
