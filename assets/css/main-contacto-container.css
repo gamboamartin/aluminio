@@ -1,0 +1,87 @@
+.main-contacto-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-main--text{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .5px;
+}
+
+.mapa-direccion{
+    text-align: center;
+}
+
+.mapa-direccion-img{
+    width:100%;
+    max-width:400px;
+
+}
+
+.banner-redes-sociales{
+    display: inline;
+
+}
+
+.imagenes-redes-sociales{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.banner-numero-telefono{
+    text-align: center;
+}
+
+.logo-contacto{
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.numero-telefono--texto{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.banner-whatsapp{
+    text-align: center;    
+}
+
+.numero-whatsapp--texto{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.banner-correo-electronico{
+    text-align: center;
+}
+
+.correo-electronico--texto{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+     border: 2px solid black;
+    padding: 3px;
+    
+}
+
