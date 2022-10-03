@@ -56,6 +56,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
+  
 }
 
 .image-blue  {
@@ -75,7 +76,7 @@
 }
 
 .proceso-slider-card--text {
-  width: 100vw;
+  width: 80vw;
   height: 25vh;
   display: flex;
   justify-content: center;

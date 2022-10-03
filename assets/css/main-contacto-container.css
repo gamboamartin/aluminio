@@ -6,7 +6,11 @@
     flex-direction: column;
 }
 
-.contacto-main--text{
+.contacto-main--text {
+    width: 100vw;
+    height: 5vh;
+    margin-top: 10vh;
+    align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
@@ -14,23 +18,29 @@
 }
 
 .mapa-direccion{
-    text-align: center;
+    width: 100vw;
+    height: 15vh;
 }
 
 .mapa-direccion-img{
-    width:100%;
-    max-width:400px;
-
+    width:100vw;
+    height: 15vh;
 }
 
 .banner-redes-sociales{
-    display: inline;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    gap: 5px;
 
 }
 
 .imagenes-redes-sociales{
     max-width: 30px;
     max-height: 30px;
+    
 }
 
 .banner-numero-telefono{
@@ -80,8 +90,11 @@ nav li{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     box-sizing: border-box;
-     border: 2px solid black;
+    border: 2px solid black;
     padding: 3px;
     
 }
 
+.red_social_media_icon {
+    width: 10%;
+}
