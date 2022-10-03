@@ -1,0 +1,47 @@
+.productos-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.productos-text-container {
+    width: 100vw;
+    height: 10vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.productos-category-container {
+    z-index: 10;
+    height: 75vh;
+    width: 100vw;
+    min-width: 320px;
+    text-align: center;
+  }
+  
+  .productos-slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-items: center;
+  }
+  
+  .productos-card {
+    scroll-snap-align: center;
+    min-width: 220px;
+    height: 50vh;
+    width: 800px;
+    border-radius: 15px;
+    background-color: grey;
+    margin: 50px 5px 0;
+  }
+
+  .productos-card-notactive {
+    opacity: 40%;
+    height: 35vh;
+  }
