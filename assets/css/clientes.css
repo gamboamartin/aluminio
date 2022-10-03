@@ -1,0 +1,42 @@
+.clientes-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.clientes-text-container {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.clientes-text-container h1{
+    padding-top: 20%;
+}
+
+.clientes-img-container {
+    width: 100vw;
+    height: 20vh;
+}
+
+
+.clientes-img-container img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.clientes-icon-container {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.clientes-icon-container img {
+    padding-top: 5%;
+    width: 30%;
+    height: 80%;
+}
