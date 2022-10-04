@@ -43,7 +43,7 @@
 
 }
 
-.banner-numero-telefono{
+.diseño-banner-contactos{
     background-color: rgb(226, 226, 226);
     text-align: center;
     box-sizing: border-box;
@@ -55,64 +55,79 @@
     margin: 15px;
 
     box-shadow: 4px 4px 10px gray;
+
+}
+
+.banner-numero-telefono{
+
 }
 
 .logo-contacto{
     max-width: 30px;
     max-height: 30px;
+
+    margin-right: 11px;
+
+    filter: invert(55%) sepia(5%) saturate(148%) 
+    hue-rotate(169deg) brightness(88%) contrast(96%);
 }
 
 .numero-telefono--texto{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    color: gray;
 }
 
 
 .banner-whatsapp{
-    text-align: center;   
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 15px; 
+     
 }
 
 .numero-whatsapp--texto{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    color: gray;
 }
 
 
 .banner-correo-electronico{
-    text-align: center;
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 15px;
+    
 }
 
 .correo-electronico--texto{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
+    color: gray;
 }
 
 nav ul{
     text-align: center;
+    margin-top: 20px;
+}
+
+.diseño-botones-privydesc{
+
+    height: 50px;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 3px;
+
+    background-color: rgb(240, 133, 34);
+
 }
 
 nav li{
-    display: inline;
+    display: inline-flex;
+    color: white;
     text-align: center;
+    position: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    box-sizing: border-box;
-    border: 2px solid black;
-    padding: 3px;
-    
+    font-size: 1.2rem; 
 }
 
 .red_social_media_icon {
