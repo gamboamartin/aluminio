@@ -84,7 +84,6 @@
 }
 .open-overlay span:nth-child(3) {
   animation-duration: 3s;
-  
   animation-name: slidein_3;
   animation-iteration-count: infinite;
 }

@@ -30,20 +30,20 @@
 
 .clientes-icon-container {
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
 }
 
 .clientes-icon-container img {
-    padding-top: 2vh;
+    padding-top: 8vh;
     width: 30%;
     height: 80%;
 }
 
 .main-text-clientes-container {
     z-index: 10;
-    height: 10vh;
+    height: 15vh;
     width: 100vw;
     min-width: 320px;
     min-height: 120px;
