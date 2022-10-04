@@ -1,7 +1,7 @@
 .productos-main-container {
     width: 100vw;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: #ececec;
 }
 
 .productos-text-container {
@@ -35,13 +35,63 @@
     scroll-snap-align: center;
     min-width: 220px;
     height: 50vh;
-    width: 800px;
+    width: 80vw;
     border-radius: 15px;
-    background-color: grey;
+    background-color: #8a8a8afa;
     margin: 50px 5px 0;
+    border: 3px solid rgb(255, 102, 0);
+    display: flex;
+    flex-direction: row;
   }
 
   .productos-card-notactive {
     opacity: 40%;
     height: 35vh;
   }
+
+  .productos-card-in-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+  }
+
+  .productos-card-in-right {
+    gap: 15px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+  }
+
+  .card-in--item {
+    width: 80%;
+    height: 25%;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    min-width: 100px;
+    max-width: 300px;
+    background-color: rgb(92, 92, 92);
+  }
+
+
+  .main-plans-container{
+    z-index: 10;
+    height: 40vh;
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+}
+
+

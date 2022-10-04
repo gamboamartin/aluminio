@@ -1,7 +1,7 @@
 .main-contacto-container{
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
+    background-color: #ececec;
     display: flex;
     flex-direction: column;
 }
