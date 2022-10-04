@@ -50,6 +50,7 @@
   }
 
   .productos-card-in-left {
+    display: none;
     height: 100%;
     width: 50%;
     display: flex;
@@ -63,6 +64,7 @@
   }
 
   .productos-card-in-right {
+    display: none;
     gap: 15px;
     height: 100%;
     width: 50%;
@@ -76,6 +78,7 @@
   }
 
   .card-in--item {
+    display: none;
     width: 80%;
     height: 25%;
     border-radius: 10px;
@@ -86,12 +89,5 @@
   }
 
 
-  .main-plans-container{
-    z-index: 10;
-    height: 40vh;
-    width: 100%;
-    min-width: 320px;
-    text-align: center;
-}
 
 

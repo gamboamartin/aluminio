@@ -19,74 +19,89 @@
     width: 50%;
     display: flex;
     justify-content: end;
-    margin: 3%;
-}
-
-.header-menubotton-container button {
-    width: 40%;
-    height: 50%;
+    margin-right: 3%;
 }
 
 
-.overlay-navigation {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(0, 0%, 0%, 0.8);
-    transform: translateY(-100%);
-  }
+.open-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-overlay span {
+  display: block;
+  height: 1.5px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 30px;
+}
+
+.open-overlay span:nth-child(1) {
+  animation-duration: 3s;
   
-  .overlay-slide-down {
-    transition: all .4s ease-in-out;
-    transform: translateY(0)
-  }
-  
-  .overlay-slide-up {
-    transition: all .8s ease-in-out;
-    transform: translateY(-100%)
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    width: 30px;
+
   }
 
-  .open-overlay {
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    z-index: 100;
-    width: 34px;
-    display: block;
-    cursor: pointer;
+  50% {
+    width: 25px;
   }
+
+  100% {
+    width: 30px;
+  }
+}
+
+.open-overlay span:nth-child(2) {
+  animation-duration: 3s;
   
-  .open-overlay span {
-    display: block;
-    height: 1.5px;
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-    margin-top: 8px;
+  animation-name: slidein_2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein_2 {
+  0% {
+    width: 30px;
+
   }
+
+  50% {
+    width: 35px;
+  }
+
+  100% {
+    width: 30px;
+  }
+}
+.open-overlay span:nth-child(3) {
+  animation-duration: 3s;
   
-  .animate-top-bar {
-    animation: animate-top-bar .6s linear 1 both
+  animation-name: slidein_3;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein_3 {
+  0% {
+    width: 30px;
+
   }
-  
-  .animate-bottom-bar {
-    animation: animate-bottom-bar .6s linear 1 both
+
+  50% {
+    width: 25px;
   }
-  
-  .animate-middle-bar {
-    animation: animate-middle-bar .6s linear 1 both
+
+  100% {
+    width: 30px;
   }
-  
-  .animate-out-top-bar {
-    animation: animate-out-top-bar .6s linear 1 both
-  }
-  
-  .animate-out-bottom-bar {
-    animation: animate-out-bottom-bar .6s linear 1 both
-  }
-  
-  .animate-out-middle-bar {
-    animation: animate-out-middle-bar .6s linear 1 both
-  }
+}
+
+
