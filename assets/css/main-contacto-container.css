@@ -1,7 +1,7 @@
 .main-contacto-container{
     width: 100vw;
     height: 100vh;
-    background-color: #ececec;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
 }
@@ -13,18 +13,18 @@
     align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    letter-spacing: .5px;
+    font-size: 2.5rem;
+    letter-spacing: .2px;
 }
 
 .mapa-direccion{
     width: 100vw;
-    height: 15vh;
+    height: 22vh;
 }
 
 .mapa-direccion-img{
     width:100vw;
-    height: 15vh;
+    height: 20vh;
 }
 
 .banner-redes-sociales{
@@ -32,7 +32,7 @@
     height: 5vh;
     display: flex;
     justify-content: center;
-    margin: 5%;
+    margin: 1.5%;
     gap: 5px;
 
 }
@@ -51,7 +51,7 @@
     border: 1px solid black;
     border-color: white;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: 15px;
 
     box-shadow: 4px 4px 10px gray;
@@ -110,26 +110,35 @@ nav ul{
 
 .diseño-botones-privydesc{
 
-    height: 50px;
+    height: 40px;
+    width: 120px;
 
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid white;
-    padding: 3px;
+    padding: 10px;
+    padding-top: 1px;
+   
 
-    background-color: rgb(240, 133, 34);
+    background-color: rgb(240, 125, 17);
 
 }
 
+.diseño-botones-privydesc:nth-child(odd){
+    margin-right: 30px;
+}
+
 nav li{
-    display: inline-flex;
+    display: inline-block;
     color: white;
     text-align: center;
-    position: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem; 
 }
 
 .red_social_media_icon {
-    width: 10%;
+    width: 16%;
+    height: 110%;
+    margin-right: 10px;
+    
 }
