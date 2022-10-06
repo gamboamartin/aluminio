@@ -36,22 +36,35 @@
 }
 
 .clientes-icon-container img {
-    padding-top: 8vh;
+    padding-top: 5vh;
     width: 30%;
-    height: 80%;
+    height: 60%;
 }
 
 .main-text-clientes-container {
     z-index: 10;
-    height: 15vh;
+    height: 25vh;
     width: 100vw;
     min-width: 320px;
     min-height: 120px;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
+.main-text-clientes-card-frist {
+    scroll-snap-align: center;
+    width: 100vw;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 8%;
+    margin-bottom: 8vh;
+    margin-top: 5vh;
+}
 .main-text-clientes-slider {
     height: 100%;
+    width: 100%;
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type: y proximity;
@@ -64,22 +77,23 @@
     width: 100vw;
     height: 15%;
     display: flex;
+    flex-direction: column;
     padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
+    padding-right: 8%;
+    margin-bottom: 8vh;
+    margin-top: 8vh;
 }
 
 .clientes-text-blond {
     font-size: 3rem;
     font-weight: 900;
-    width: 30%;
+    width: 100%;
 }
 
 .clientes-text {
     font-size: 2rem;
     font-weight: 400;
-    width: 70%;
+    width: 100%;
 }
 
 .main-text-clientes-card-last {
@@ -87,8 +101,9 @@
     width: 100vw;
     height: 15%;
     display: flex;
+    flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 10vh;
 }
