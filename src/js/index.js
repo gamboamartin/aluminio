@@ -3,3 +3,10 @@ $('.carousel').carousel({
     number: 4
 })
 
+
+
+function myFunction() {
+
+    console.log("ola")
+
+}
