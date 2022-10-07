@@ -7,14 +7,14 @@
 .productos-text-container {
     width: 100vw;
     height: 10vh;
-    padding-top: 10vh;
     display: flex;
     justify-content: center;
+    align-items: end;
 }
 
 .productos-category-container {
     z-index: 10;
-    height: 75vh;
+    height: 80vh;
     width: 100vw;
     min-width: 320px;
     text-align: center;
@@ -23,30 +23,79 @@
   .productos-slider {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     height: 100%;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    align-items: flex-start;
     align-items: center;
   }
   
+  .productos-card-primera {
+    margin-left: 440vw;
+  }
+  .productos-card-ultima {
+    margin-right: 40vw;
+  }
   .productos-card {
     scroll-snap-align: center;
     min-width: 220px;
-    height: 50vh;
-    width: 80vw;
+    height: 60vh;
+    width: 40vw;
+    border: 5px solid rgb(255, 102, 0);
     border-radius: 15px;
-    background-color: #8a8a8afa;
-    margin: 50px 5px 0;
-    border: 3px solid rgb(255, 102, 0);
     display: flex;
     flex-direction: row;
   }
 
-  .productos-card-notactive {
-    opacity: 40%;
-    height: 35vh;
+  .productos-card:nth-child(1) {
+    background-image: url("/assets/productos-imgs/BARANDALES/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(2) {
+    background-image: url("/assets/productos-imgs/CANCELESDEBAÑO/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(3) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(4) {
+    background-image: url("/assets/productos-imgs/PROYECTOSCOMERCIALES/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(5) {
+    background-image: url("/assets/productos-imgs/PROYECTOSRESIDENCIALES/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(6) {
+    background-image: url("/assets/productos-imgs/PUERTASDEALUMINIO/001.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(7) {
+    background-image: url("/assets/productos-imgs/VENTANASDEALUMINIO/0013.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .productos-card-in-left {
@@ -88,6 +137,92 @@
     background-color: rgb(92, 92, 92);
   }
 
+  .not-active_1 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_2 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_3 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_4 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_5 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_6 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_7 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
 
+  .active_1 {
+    animation-duration: 3s;
+    animation-name: select;
+  }
+  .active_2 {
+    animation-duration: 3s;
+    animation-name: select;
+    
+  }
+  .active_3 {
+    animation-duration: 3s;
+    animation-name: select;
+   
+  }
+  .active_4 {
+    animation-duration: 3s;
+    animation-name: select;
+    
+  }
+  .active_5 {
+    animation-duration: 3s;
+    animation-name: select;
+  
+  }
+  .active_6 {
+    animation-duration: 3s;
+    animation-name: select;
+
+  }
+  .active_7 {
+    animation-duration: 3s;
+    animation-name: select;
+  }
+
+
+
+
+  @keyframes select {
+    0% {
+      border: 5px solid rgb(255, 102, 0);
+    }
+    50% {
+      border: 15px solid rgb(255, 102, 0);
+    }
+
+    100% {
+      border: 5px solid rgb(255, 102, 0);
+    }
+  }
+
+  
 
 
