@@ -296,12 +296,17 @@
 }
 
 .boton-cerrar-productos-open {
-  width: 10vw;
+  width: 20vw;
   height: 5vh;
   border-radius: 50%;
   margin-left: 80vw;
 
 }
+
+.boton-cerrar-productos-open img {
+  width: 40%;
+}
+
 
 .pregunta-frecuente-abrir {
   width: 80vw;
