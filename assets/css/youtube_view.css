@@ -61,7 +61,7 @@
     margin: 5%;
 }
 
-.main-plans-container{
+.main-plans-container {
     z-index: 10;
     height: 40vh;
     width: 100%;
@@ -69,7 +69,7 @@
     text-align: center;
 }
 
-.plans-container--slider{
+.plans-container--slider {
     display: flex;
     padding-top: 5vh;
     gap: 5px;

@@ -241,7 +241,7 @@ function seleccionar_7() {
 
 
 
-function test() {
+function ejemplo() {
     console.log("ola")
 
 
