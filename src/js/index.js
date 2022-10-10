@@ -236,3 +236,13 @@ function seleccionar_7() {
     cardNotActive6.classList.add("not-active_6")
 
 }
+
+
+
+
+
+function test() {
+    console.log("ola")
+
+
+}
