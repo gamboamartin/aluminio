@@ -9,6 +9,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .clientes-text-container h1{
@@ -36,7 +37,7 @@
 }
 
 .clientes-icon-container img {
-    padding-top: 2vh;
+    padding-top: 3vh;
     width: 30%;
     height: 80%;
 }
