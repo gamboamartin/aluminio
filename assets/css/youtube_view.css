@@ -1,11 +1,17 @@
+.detenerscrollenyoutube {
+    position: fixed;
+    top: 0px;
+}
+
+
 .youtube_channel_container {
+    z-index: 100;
     width: 100vw;
     height: 105vh;
     background-color: #ececec;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .youtube_data {
@@ -77,10 +83,10 @@
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
 }
 
 .plans-container--card {
-    scroll-snap-align: center;
     width: 60vw;
     height: 15vh;
     min-width: 190px;
@@ -97,3 +103,5 @@
     box-shadow: 0 8px 16px 8px rgb(90, 73, 30, 0.16);
     width: 100%;
 }
+
+

@@ -1,7 +1,7 @@
 .header-main-container {
     position: fixed;
     display: flex;
-    z-index: 10;
+    z-index: 110;
     width: 100vw;
     height: 10vh;
 }
@@ -20,8 +20,8 @@
   display: flex;
   justify-content: end;
   align-items: flex-start;
-  padding-right: 3%;
-  padding-top: 5%;
+  margin-right: 3%;
+  margin-top: 5%;
 }
 
 
