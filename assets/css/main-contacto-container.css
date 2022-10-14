@@ -58,10 +58,6 @@
 
 }
 
-.banner-numero-telefono{
-
-}
-
 .logo-contacto{
     max-width: 30px;
     max-height: 30px;
@@ -79,21 +75,11 @@
     color: gray;
 }
 
-
-.banner-whatsapp{
-     
-}
-
 .numero-whatsapp--texto{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     color: gray;
-}
-
-
-.banner-correo-electronico{
-    
 }
 
 .correo-electronico--texto{
