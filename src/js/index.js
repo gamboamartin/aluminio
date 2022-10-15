@@ -240,9 +240,3 @@ function seleccionar_7() {
 
 
 
-
-function ejemplo() {
-    console.log("ola")
-
-
-}
