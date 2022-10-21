@@ -130,3 +130,44 @@
     border-radius: 50px;
   }
 }
+
+
+
+.header-menu-desplegable {
+  position: fixed;
+  width: 90vw;
+  height: 120vh;
+  z-index: 120;
+  left: 70vw;
+  top: 10vh;
+  margin-top: 1vh;
+  display: none;
+  
+}
+
+.header-menu-desplegable-abrir {
+  display: block;
+}
+
+.diseño-banner-header {
+  background-color: #ececec;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 15px 15px 15px 15px rgba(102, 102, 102, 0.279);
+  width: 70vw;
+  height: 9vh;
+  margin-top: 1vh;
+  margin-left: 5vw;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 1.5vh;
+}
+
+
+.header-menubotton-container-cerrar {
+  display: none;
+}
+
+.header-menubotton-container-abrir {
+  display: none;
+}
