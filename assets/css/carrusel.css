@@ -1,6 +1,6 @@
 .carrusel-main-container {
-    width: 100vw;
-    height: 100vh;
+    width: 161vw;
+    height: 160vh;
 }
 
 
@@ -8,10 +8,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    object-fit: contain;
+
 }
 
 .carousel-image-short {
-    width: 100vw;
-    height: 100vh;
+    width: 200vw;
+    height: 160vh;
 }

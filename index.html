@@ -1,332 +1,415 @@
 <!DOCTYPE html>
-<html id="html" lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <script src="/src/js/index.js"></script>
-    <script src="/src/js/proceso.js"></script>
-    <script src="/src/js/youtube.js"></script>
+  <meta charset="UTF-8">
+  <title>Aluminio</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/boton_cotiza.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css//boton_whatsapp.css">
+  <link rel="stylesheet" href="/assets/css/carrusel.css">
+  <link rel="stylesheet" href="/assets/css/youtube_view.css">
+  <link rel="stylesheet" href="/assets/css/main-proceso-container.css">
+  <link rel="stylesheet" href="assets/css/main-contacto-container.css">
+  <link rel="stylesheet" href="/assets/css/clientes.css">
+  <link rel="stylesheet" href="/assets/css/productos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/boton_cotiza.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css//boton_whatsapp.css">
-    <link rel="stylesheet" href="/assets/css/carrusel.css">
-    <link rel="stylesheet" href="/assets/css/youtube_view.css">
-    <link rel="stylesheet" href="/assets/css/main-proceso-container.css">
-    <link rel="stylesheet" href="assets/css/main-contacto-container.css">
-    <link rel="stylesheet" href="/assets/css/clientes.css">
-    <link rel="stylesheet" href="/assets/css/productos.css">
-
-    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluminio</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="/src/js/index.js"></script>
+  <script src="/src/js/proceso.js"></script>
+  <script src="/src/js/youtube.js"></script>
+  <script src="/src/js/productos.js"></script>
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<div id="page" class="site">
+  <div id="feather" class="feather"></div>
+  <main id="content" class="site-content" role="main">
 
     <header class="header-main-container">
-        <section class="header-logo-container">
-            <img src="../assets/Vanguardia logo.png" alt="">
-        </section>
-        <section class="header-menubotton-container ">
-            <div class="open-overlay">
-                <div class="bar-container">
-                    <span class="bar--item"></span>
-                    <span class="circle--item"></span>
-                </div>
-                <div class="bar-container">
-                    <span class="bar--item"></span>
-                    <span class="circle--item"></span>
-                </div>
-                <div class="bar-container">
-                    <span class="bar--item"></span>
-                    <span class="circle--item"></span>
-                </div>
+      <section class="header-logo-container">
+          <img src="../assets/Vanguardia logo.png" alt="">
+      </section>
+      <section class="header-menubotton-container ">
+          <div class="open-overlay">
+              <div class="bar-container">
+                  <span class="bar--item"></span>
+                  <span class="circle--item"></span>
               </div>
-        </section>
+              <div class="bar-container">
+                  <span class="bar--item"></span>
+                  <span class="circle--item"></span>
+              </div>
+              <div class="bar-container">
+                  <span class="bar--item"></span>
+                  <span class="circle--item"></span>
+              </div>
+            </div>
+      </section>
     </header>
-
-    <section class="carrusel-main-container">   
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/20211005_122123.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/20220114_124325.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/20220609_135949.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/IMG20220615165908.jpg" alt="Fourth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/IMG20220715142720.jpg" alt="Fifth slide">
-              </div>
+  
+    <section id="intro" class="carrusel-main-container">   
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/20211005_122123.jpg" alt="First slide">
             </div>
-   
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/20220114_124325.jpg" alt="Second slide">
             </div>
-
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/20220609_135949.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/IMG20220615165908.jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-image carousel-image-short" src="/assets/main-carrusel-fotos/IMG20220715142720.jpg" alt="Fifth slide">
             </div>
           </div>
+      </div>
     </section>
 
-    <section id="panels" class="youtube_channel_container">
+    <section id="panels">
+      <div id="panels-container" style="width: 1300%;">
         <div class="youtube_data">
-            <section class="youtube-text-container">
-                <h1 class="youtube_data_text">VISITA</h1>
-                <h1 class="youtube_data_text_1">NUESTRO</h1>
-                <h1 class="youtube_data_text_2">CANAL</h1>
-                <div class="vistas_contador">3,847,634 vistas</div>
-                <div class="youtube-icon">
-                    <img class="youtube-icon-img" src="./assets/botonyoutube.png" alt="">
-                </div>
-                <div class="suscriptores_contador">38,500 Subscriptores</div>
-            </section>
-        </div>
-        <section id="panels-container" class="main-plans-container">
-            <section  id="slider" class="plans-container--slider">
-                <article id="panel-1" class="plans-container--card">
-                    <a href="https://www.youtube.com/watch?v=_iFdkUehUdg"> <img src="./assets/videos_pictures/1.png" alt=""> </a> 
-                </article>
-                <article id="panel-2" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=MWWMW9Lf1k4"> <img src="./assets/videos_pictures/11 (1).png" alt=""> </a> 
-                </article>
-                <article id="panel-3" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=BLMJtQ--MoE"> <img src="./assets/videos_pictures/11.png" alt=""> </a> 
-                </article>
-                <article id="panel-4" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=JBCiPwZ-ang"> <img src="./assets/videos_pictures/13 (1).png" alt=""> </a> 
-                </article>
-                <article id="panel-5" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=cE_q9N3nGS8"> <img src="./assets/videos_pictures/13.png" alt=""> </a> 
-                </article>
-                <article id="panel-6" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=XmTj4O6ExAk"> <img src="./assets/videos_pictures/2.png" alt=""> </a> 
-                </article>
-                <article id="panel-7" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=8Y4f0ChKSx4"> <img src="./assets/videos_pictures/22.png" alt=""> </a> 
-                </article>
-                <article id="panel-8" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=NDoa1bZ14io"> <img src="./assets/videos_pictures/44.png" alt=""> </a> 
-                </article>
-                <article id="panel-9" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=z5qBTpGUJic"> <img src="./assets/videos_pictures/47 (1).png" alt=""> </a> 
-                </article>
-                <article id="panel-10" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=2u9OPC1QpJ4"> <img src="./assets/videos_pictures/47.png" alt=""> </a> 
-                </article>
-                <article id="panel-11" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=q6Kymp5pTuE"> <img src="./assets/videos_pictures/48.png" alt=""> </a> 
-                </article>
-                <article id="panel-12" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=fCeS8SlndH0"> <img src="./assets/videos_pictures/49.png" alt=""> </a> 
-                </article>
-                <article id="panel-13" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=eQhldU_gw_c"> <img src="./assets/videos_pictures/5.png" alt=""> </a> 
-                </article>
-                <article id="panel-14" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=q2pPRUbo01M"> <img src="./assets/videos_pictures/53.png" alt=""> </a> 
-                </article>
-                <article id="panel-15" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=KWwIsjX2IPE"> <img src="./assets/videos_pictures/79.png" alt=""> </a> 
-                </article>
-                <article id="panel-16" class="plans-container--card panel">
-                    <a href="https://www.youtube.com/watch?v=AdH05NIUfRc"> <img src="./assets/videos_pictures/9.png" alt=""> </a> 
-                </article>
-            </section>
-        </section>
+          <section class="youtube-text-container">
+              <h1 class="youtube_data_text">VISITA</h1>
+              <h1 class="youtube_data_text_1">NUESTRO</h1>
+              <h1 class="youtube_data_text_2">CANAL</h1>
+              <div class="vistas_contador">3,847,634 vistas</div>
+              <div class="youtube-icon">
+                <a href="https://www.youtube.com/c/VentanasdeAluminio">
+                  <img class="youtube-icon-img" src="./assets/botonyoutube.png" alt="" hre>
+                </a>
+              </div>
+              <div class="suscriptores_contador">38,500 Subscriptores</div>
+          </section>
+      </div>
+        <article id="panel-1" class="panel full-screen red">
+          <a href="https://www.youtube.com/watch?v=_iFdkUehUdg"> <img src="./assets/videos_pictures/1.png" alt=""> </a> 
+        </article>
+        <article id="panel-2" class="panel full-screen orange">
+          <a href="https://www.youtube.com/watch?v=MWWMW9Lf1k4"> <img src="./assets/videos_pictures/11 (1).png" alt=""> </a>
+        </article>
+        <article id="panel-3" class="panel full-screen purple">
+          <a href="https://www.youtube.com/watch?v=BLMJtQ--MoE"> <img src="./assets/videos_pictures/11.png" alt=""> </a>
+        </article>
+        <article id="panel-4" class="panel full-screen green">
+          <a href="https://www.youtube.com/watch?v=JBCiPwZ-ang"> <img src="./assets/videos_pictures/13 (1).png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=cE_q9N3nGS8"> <img src="./assets/videos_pictures/13.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=XmTj4O6ExAk"> <img src="./assets/videos_pictures/2.png" alt=""> </a>
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=8Y4f0ChKSx4"> <img src="./assets/videos_pictures/22.png" alt=""> </a>
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=NDoa1bZ14io"> <img src="./assets/videos_pictures/44.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=z5qBTpGUJic"> <img src="./assets/videos_pictures/47 (1).png" alt=""> </a>
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=2u9OPC1QpJ4"> <img src="./assets/videos_pictures/47.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=q6Kymp5pTuE"> <img src="./assets/videos_pictures/48.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=fCeS8SlndH0"> <img src="./assets/videos_pictures/49.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=eQhldU_gw_c"> <img src="./assets/videos_pictures/5.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=q2pPRUbo01M"> <img src="./assets/videos_pictures/53.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=KWwIsjX2IPE"> <img src="./assets/videos_pictures/79.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel full-screen gray">
+          <a href="https://www.youtube.com/watch?v=AdH05NIUfRc"> <img src="./assets/videos_pictures/9.png" alt=""> </a> 
+        </article>
+      </div>
     </section>
 
-    <section class="productos-main-container">
-        <div class="productos-text-container">
-            <h1>PRODUCTOS</h1>
-        </div>
-        <div class="productos-category-container">
-            <div class="productos-slider">
-                <a href="./productos-barandales.html" id="card-1" onclick="seleccionar_1()" class="not-active_1 productos-card productos-card-primera"></a>
-                <a href="./productos-cancelesdebaño.html" id="card-2" onclick="seleccionar_2()" class="not-active_2 productos-card"></a>
-                <a href="./productos-domosytechos.html" id="card-3" onclick="seleccionar_3()" class="not-active_3 productos-card"></a>
-                <a href="./productos-proyectoscomerciales.html" id="card-4" onclick="seleccionar_4()" class="not-active_4 productos-card"></a>
-                <a href="./productos-puertasdealuminio.html" id="card-5" onclick="seleccionar_5()" class="not-active_5 productos-card"></a>
-                <a href="./productos-ventanasdealuminio.html" id="card-6" onclick="seleccionar_6()" class="not-active_6 productos-card"></a>
-                <a href="" id="card-7" onclick="seleccionar_7()" class="not-active_7 productos-card productos-card-ultima"></a>
-            </div>
-        </div>
-    </section>
+  <section id="panels-p">
+      <div id="panels-container-P" style="width: 1300%;">
+        <div class="youtube_data">
+          <section class="youtube-text-container">
+              <h1 class="youtube_data_text">VISITA</h1>
+              <h1 class="youtube_data_text_1">NUESTRO</h1>
+              <h1 class="youtube_data_text_2">CANAL</h1>
+              <div class="vistas_contador">3,847,634 vistas</div>
+              <div class="youtube-icon">
+                <a href="https://www.youtube.com/c/VentanasdeAluminio">
+                  <img class="youtube-icon-img" src="./assets/botonyoutube.png" alt="" hre>
+                </a>
+              </div>
+              <div class="suscriptores_contador">38,500 Subscriptores</div>
+          </section>
+      </div>
+        <article id="panel-1" class="panel-producto full-screen red">
+          <a href="https://www.youtube.com/watch?v=_iFdkUehUdg"> <img src="./assets/videos_pictures/1.png" alt=""> </a> 
+        </article>
+        <article id="panel-2" class="panel-producto full-screen orange">
+          <a href="https://www.youtube.com/watch?v=MWWMW9Lf1k4"> <img src="./assets/videos_pictures/11 (1).png" alt=""> </a>
+        </article>
+        <article id="panel-3" class="panel-producto full-screen purple">
+          <a href="https://www.youtube.com/watch?v=BLMJtQ--MoE"> <img src="./assets/videos_pictures/11.png" alt=""> </a>
+        </article>
+        <article id="panel-4" class="panel-producto full-screen green">
+          <a href="https://www.youtube.com/watch?v=JBCiPwZ-ang"> <img src="./assets/videos_pictures/13 (1).png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=cE_q9N3nGS8"> <img src="./assets/videos_pictures/13.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=XmTj4O6ExAk"> <img src="./assets/videos_pictures/2.png" alt=""> </a>
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=8Y4f0ChKSx4"> <img src="./assets/videos_pictures/22.png" alt=""> </a>
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=NDoa1bZ14io"> <img src="./assets/videos_pictures/44.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=z5qBTpGUJic"> <img src="./assets/videos_pictures/47 (1).png" alt=""> </a>
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=2u9OPC1QpJ4"> <img src="./assets/videos_pictures/47.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=q6Kymp5pTuE"> <img src="./assets/videos_pictures/48.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=fCeS8SlndH0"> <img src="./assets/videos_pictures/49.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=eQhldU_gw_c"> <img src="./assets/videos_pictures/5.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=q2pPRUbo01M"> <img src="./assets/videos_pictures/53.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=KWwIsjX2IPE"> <img src="./assets/videos_pictures/79.png" alt=""> </a> 
+        </article>
+        <article id="panel-5" class="panel-producto full-screen gray">
+          <a href="https://www.youtube.com/watch?v=AdH05NIUfRc"> <img src="./assets/videos_pictures/9.png" alt=""> </a> 
+        </article>
+      </div>
+  </section>
+
+  
 
     <section class="clientes-main-container">
-        <div class="clientes-text-container">
-            <h1>CLIENTES</h1>
-        </div>
-        <div class="clientes-img-container">
-            <img src="/assets/clientes-assets/Screenshot 2022-10-03 105607.png" alt="">
-        </div>
-        <div class="clientes-icon-container">
-            <img src="/assets/clientes-assets/Garantia 1 año .png" alt="">
-        </div>
-        <div class="main-text-clientes-container">
-            <div onscroll="test()" class="main-text-clientes-slider">
-                <div class="main-text-clientes-card-frist">
-                    <h1 class="clientes-text-blond">1 año</h1>
-                    <h1 class="clientes-text">De garantia en todos nuestros productos</h1>
+      <div class="clientes-text-container">
+          <h1>CLIENTES</h1>
+      </div>
+      <div class="clientes-img-container">
+        <section id="intro" class="carrusel-main-container-clientes">   
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Cynthia Molina.png" alt="First slide">
                 </div>
-                <div class="main-text-clientes-card">
-                    <h1 class="clientes-text-blond">GARANTIA DE 1 AÑO</h1>
-                    <h1 class="clientes-text">La calidad de fabricación de nuestros productos está respaldada por nuestra garantía por escrito</h1>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Erik Gonzalez.png" alt="Second slide">
                 </div>
-                <div class="main-text-clientes-card-last">
-                    <h1 class="clientes-text-blond">Diseños innovadores</h1>
-                    <h1 class="clientes-text">líneas modernas y elegantes que se complementan</h1>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/giovanni jusef.png" alt="Third slide">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="main-proceso-container">
-        <div class="proceso-main--text">
-            <h1>PROCESO DE COMPRA</h1>
-        </div>
-        <section class="proceso-main-container">
-            <section onscroll="myFunction()" class="proceso-slider">
-                <section class="proceso-slider--card">
-
-                    <article class="proceso-slider-card-image">
-                        <img src="./assets/proceso-imagenes/Proceso 1.png" alt="">
-                    </article>
-
-                    <div class="proceso-slider-card--text">
-                        <h1>1. Llámanos o envíanos un Whatsapp</h1>
-                    </div>
-
-                </section>
-                <section class="proceso-slider--card">
-                    <article class="proceso-slider-card-image proceso-imagen-2">
-                        <img src="./assets/proceso-imagenes/Proceso 2.png" alt="">
-                    </article>
-                    <div class="proceso-slider-card--text proceso-2-margin">
-                        <h1>2. Platícanos sobre tu proyecto, nos puedes enviar las medidas o fotografías por Whatsapp</h1>
-                    </div>
-                </section>
-                <section class="proceso-slider--card">
-                    <article class="proceso-slider-card-image">
-                        <img src="./assets/proceso-imagenes/Proceso 3.png" alt="">
-                    </article>
-                    <div class="proceso-slider-card--text">
-                        <h1>3. Envío cotización por correo o WhatsApp</h1>
-                    </div>
-                </section>
-                <section class="proceso-slider--card">
-                    <article class="image-blue">
-                        <img src="./assets/proceso-imagenes/Proceso 4.png" alt="">
-                    </article>
-                    <div class="proceso-slider-card--text">
-                        <h1>4.  Programación de cita en su domicilio para revisar detalles sobre su proyecto</h1>
-                    </div>
-                </section>
-                <section class="proceso-slider--card proceasdadsadad">
-                    <article class="image-blue imagen-firma-pedido">
-                        <img src="./assets/proceso-imagenes/Proceso 5.png" alt="">
-                    </article>
-                    <div class="proceso-slider-card--text">
-                        <h1>5. Firma de orden de pedido (anticipo requerido)</h1>
-                    </div>
-                </section>
-
-                <section class="proceso-slider--card">
-                    <article class="image-blue image-blue-firma">
-                        <img src="./assets/proceso-imagenes/Proceso 6.png" alt="">
-                    </article>
-                    <div class="proceso-slider-card--text">
-                        <h1>6. Instalación </h1>
-                    </div>
-                </section>
-            </section>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Harold Goerne.png" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Javier King.png" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Jesus Garcia.png" alt="sixth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Leonardo Orozco.png" alt="seventh slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Omar munoz.png" alt="eighth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Santiago Bravo.png" alt="nineth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 carousel-image-clientes carousel-image-short-clientes" src="/assets/clientes-assets/Uriel Salmon.png" alt="tenth slide">
+                </div>
+              </div>
+          </div>
         </section>
+      </div>
+      <div class="clientes-icon-container">
+          <img src="/assets/clientes-assets/Garantia 1 año .png" alt="">
+      </div>
+      <div class="main-text-clientes-container">
+      </div>
     </section>
+
+  <section class="main-proceso-container">
+      <div class="proceso-main--text">
+          <h1>PROCESO DE COMPRA</h1>
+      </div>
+      <section class="proceso-main-container">
+          <section onscroll="myFunction()" class="proceso-slider">
+              <section class="proceso-slider--card">
+
+                  <article class="proceso-slider-card-image">
+                      <img src="./assets/proceso-imagenes/Proceso 1.png" alt="">
+                  </article>
+
+                  <div class="proceso-slider-card--text">
+                      <h1>1. Llámanos o envíanos un Whatsapp</h1>
+                  </div>
+
+              </section>
+              <section class="proceso-slider--card">
+                  <article class="proceso-slider-card-image proceso-imagen-2">
+                      <img src="./assets/proceso-imagenes/Proceso 2.png" alt="">
+                  </article>
+                  <div class="proceso-slider-card--text proceso-2-margin">
+                      <h1>2. Platícanos sobre tu proyecto, nos puedes enviar las medidas o fotografías por Whatsapp</h1>
+                  </div>
+              </section>
+              <section class="proceso-slider--card">
+                  <article class="proceso-slider-card-image">
+                      <img src="./assets/proceso-imagenes/Proceso 3.png" alt="">
+                  </article>
+                  <div class="proceso-slider-card--text">
+                      <h1>3. Envío cotización por correo o WhatsApp</h1>
+                  </div>
+              </section>
+              <section class="proceso-slider--card">
+                  <article class="image-blue">
+                      <img src="./assets/proceso-imagenes/Proceso 4.png" alt="">
+                  </article>
+                  <div class="proceso-slider-card--text">
+                      <h1>4.  Programación de cita en su domicilio para revisar detalles sobre su proyecto</h1>
+                  </div>
+              </section>
+              <section class="proceso-slider--card proceasdadsadad">
+                  <article class="image-blue imagen-firma-pedido">
+                      <img src="./assets/proceso-imagenes/Proceso 5.png" alt="">
+                  </article>
+                  <div class="proceso-slider-card--text">
+                      <h1>5. Firma de orden de pedido (anticipo requerido)</h1>
+                  </div>
+              </section>
+
+              <section class="proceso-slider--card">
+                  <article class="image-blue image-blue-firma">
+                      <img src="./assets/proceso-imagenes/Proceso 6.png" alt="">
+                  </article>
+                  <div class="proceso-slider-card--text">
+                      <h1>6. Instalación </h1>
+                  </div>
+              </section>
+          </section>
+      </section>
+  </section>
 
     <section class="main-contacto-container">
 
-        <h1 class="contacto-main--text"> CONTACTO </h1>
+      <h1 class="contacto-main--text"> CONTACTO </h1>
 
-        <div class="mapa-direccion">
-            <img class="mapa-direccion-img"  src="assets/direccion-imagenes/direccion-mapa.png" alt="">
-        </div>
-            
-        <section class="banner-redes-sociales">
-            <a href="https://www.facebook.com/VanguardiaAluminioYVidrio"> <img class="red_social_media_icon" src="https://imgs.search.brave.com/6alZXRnkIk0t8aG3zDZC2DVFDaP6AuFHvcgufRi3BZs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvZmFj/ZWJvb2staWNvbi1s/b2dvLXBuZy10cmFu/c3BhcmVudC5wbmc" alt=""> </a> 
-            <a href="https://www.instagram.com/vanguardiaaluminioyvidrio/"> <img class="red_social_media_icon" src="https://imgs.search.brave.com/SE2p8LKS3WvwSXLTqzA_IAjkd9hHEzByHKUVHYKwGTI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE3/LzA0L2luc3RhZ3Jh/bS1sb2dvLnBuZw" alt=""> </a> 
-            <a href="https://www.youtube.com/c/VentanasdeAluminio"> <img class="red_social_media_icon" src="https://imgs.search.brave.com/v6DGU-s8nONxTMyJMgF3dgXmG6V_BytTgWtPkOICqGQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L29mZmljaWFsLXlv/dXR1YmUtbG9nby1w/bmctMTgucG5n" alt=""> </a> 
-            <a href="https://www.tiktok.com/@ventanasdealuminio"> <img class="red_social_media_icon" src="https://imgs.search.brave.com/ESwmiXMjxfQRfFMzH-gjrDSvnuuyuJaLzizFOZ8bn64/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzA4L3Rpa3Rvay1s/b2dvLWljb24ucG5n" alt=""> </a>
+      <div class="mapa-direccion">
+          <img class="mapa-direccion-img"  src="assets/direccion-imagenes/direccion-mapa.png" alt="">
+      </div>
+          
+      <section class="banner-redes-sociales">
+          <a href="https://www.facebook.com/VanguardiaAluminioYVidrio"> 
+            <img class="red_social_media_icon" src="https://imgs.search.brave.com/6alZXRnkIk0t8aG3zDZC2DVFDaP6AuFHvcgufRi3BZs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvZmFj/ZWJvb2staWNvbi1s/b2dvLXBuZy10cmFu/c3BhcmVudC5wbmc" alt=""> </a> 
+          <a href="https://www.instagram.com/vanguardiaaluminioyvidrio/"> 
+            <img class="red_social_media_icon" src="https://imgs.search.brave.com/SE2p8LKS3WvwSXLTqzA_IAjkd9hHEzByHKUVHYKwGTI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE3/LzA0L2luc3RhZ3Jh/bS1sb2dvLnBuZw" alt=""> 
+          </a> 
+          <a href="https://www.youtube.com/c/VentanasdeAluminio"> 
+            <img class="red_social_media_icon" src="https://imgs.search.brave.com/v6DGU-s8nONxTMyJMgF3dgXmG6V_BytTgWtPkOICqGQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L29mZmljaWFsLXlv/dXR1YmUtbG9nby1w/bmctMTgucG5n" alt=""> 
+          </a> 
+          <a href="https://www.tiktok.com/@ventanasdealuminio"> 
+            <img class="red_social_media_icon" src="https://imgs.search.brave.com/ESwmiXMjxfQRfFMzH-gjrDSvnuuyuJaLzizFOZ8bn64/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzA4L3Rpa3Rvay1s/b2dvLWljb24ucG5n" alt=""> 
+          </a>
+      </section>
+
+      <div class="seccion-banner-contactos">
+        <section class="diseño-banner-contactos">
+          <a href="tel:+323336285907">   
+            <img class="logo-contacto" src="assets/redes-sociales-imgs/phone-call.png" alt="">
+            <h1 class="numero-telefono--texto">3336285907</h1>
+          </a>    
         </section>
-
-        <div class=" seccion-banner-contactos">
-            <section class="diseño-banner-contactos">
-                <a href="tel:+323336285907"> <h1 class="numero-telefono--texto"> <img class="logo-contacto" src="assets/redes-sociales-imgs/phone-call.png" alt=""> 3336285907 </h1> </a>    
-       
-               </section>
-       
-               <section class="diseño-banner-contactos">
-                  <a href="https://api.whatsapp.com/send?phone=+523314499988&text=Vanguardia%20Aluminio:"> <h1 class="numero-whatsapp--texto"> <img class="logo-contacto" src="assets/redes-sociales-imgs/whatsapp-outline-shape.png" alt=""> 3314499988</h1> </a> 
-       
-               </section>
-       
-               <section class="diseño-banner-contactos">
-                   <a href="mailto:contacto@vanguardiaaluminio.com.mx"><h1 class="correo-electronico--texto"> <img class="logo-contacto" src="assets/redes-sociales-imgs/email-envelope.png" alt=""> contacto@vanguardiaaluminio.com.mx</h1> </a> 
-       
-               </section>
-        </div>
-
-        <nav>
-            <ul>
-                <li class="diseño-botones-privydesc aviso-privacidad--texto"> Aviso de <br> Privacidad </li>
-                <li class="diseño-botones-privydesc descarga-garantia--texto"> Descarga <br >Garantia </li>
-            </ul>
-        </nav>
+        <section class="diseño-banner-contactos">
+          <a href="https://api.whatsapp.com/send?phone=+523314499988&text=Vanguardia%20Aluminio:"> 
+            <img class="logo-contacto" src="assets/redes-sociales-imgs/whatsapp-outline-shape.png" alt=""> 
+            <h1 class="numero-whatsapp--texto">3314499988</h1>
+          </a> 
+        </section>
+        <section class="diseño-banner-contactos">
+          <a href="mailto:contacto@vanguardiaaluminio.com.mx">
+            <img class="logo-contacto" src="assets/redes-sociales-imgs/email-envelope.png" alt="">
+            <h1 class="correo-electronico--texto">contacto@vanguardiaaluminio.com.mx</h1> 
+          </a> 
+        </section>
+      </div>
+      <nav>
+          <ul class="botones-naranjas-contactos">
+              <li class="diseño-botones-privydesc aviso-privacidad--texto"> Aviso de <br> Privacidad </li>
+              <li class="diseño-botones-privydesc descarga-garantia--texto"> Descarga <br >Garantia </li>
+          </ul>
+      </nav>
 
     </section>
 
     <section class="main-cotiza-botton-container">
-        <a class="cotiza-botton-container" href="https://form.jotform.com/222546162830048">
-            <h1 class="cotiza-text">Cotiza en linea</h1>
-        </a>
+      <a class="cotiza-botton-container" href="https://form.jotform.com/222546162830048">
+          <h1 class="cotiza-text">Cotiza en linea</h1>
+      </a>
     </section>
 
     <section class="main-whatsapp-botton-container">
-        <a class="whatsapp-botton-container" href="https://api.whatsapp.com/send?phone=+523314499988&text=Vanguardia%20Aluminio:">
-            <h1 class="whatsapp-text">Envianos un</h1>
-            <h1 class="whatsapp-text-bold">WhatsApp</h1>
-            <img class="whatsapp-icon" src="https://imgs.search.brave.com/WvDlU9lrnieIJ5L7_FaEGvRlYPOgWZ-aGxKZSEpAcIM/rs:fit:1100:1105:1/g:ce/aHR0cHM6Ly9pbWFn/ZXBuZy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMTcvMDgv/V2hhdHNBcHAtaWNv/bmUtMy5wbmc" alt="whatsapp icone">
-        </a>
+      <a class="whatsapp-botton-container" href="https://api.whatsapp.com/send?phone=+523314499988&text=Vanguardia%20Aluminio:">
+          <h1 class="whatsapp-text">Envianos un</h1>
+          <h1 class="whatsapp-text-bold">WhatsApp</h1>
+          <img class="whatsapp-icon" src="https://imgs.search.brave.com/WvDlU9lrnieIJ5L7_FaEGvRlYPOgWZ-aGxKZSEpAcIM/rs:fit:1100:1105:1/g:ce/aHR0cHM6Ly9pbWFn/ZXBuZy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMTcvMDgv/V2hhdHNBcHAtaWNv/bmUtMy5wbmc" alt="whatsapp icone">
+      </a>
     </section>
-
+  </main>
+</div>
+<!-- partial -->
+<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script>
+<script  src="./src/js/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

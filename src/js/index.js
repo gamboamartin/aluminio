@@ -1,5 +1,5 @@
 $('.carousel').carousel({
-    interval: 100,
+    interval: 2000,
     number: 4
 })
 
@@ -236,6 +236,8 @@ function seleccionar_7() {
     cardNotActive6.classList.add("not-active_6")
 
 }
+
+
 
 
 

@@ -1,12 +1,12 @@
 .clientes-main-container {
-    width: 100vw;
-    height: 100vh;
+    width: 160vw;
+    height: 160vh;
     background-color: #ececec;
 }
 
 .clientes-text-container {
-    height: 20vh;
-    width: 100vw;
+    height: 30vh;
+    width: 160vw;
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
@@ -14,11 +14,14 @@
 
 .clientes-text-container h1{
     padding-top: 20%;
+    font-size: 9rem;
+    font-weight: 400;
+    margin-bottom: 5vh;
 }
 
 .clientes-img-container {
-    width: 100vw;
-    height: 20vh;
+    width: 160vw;
+    height: 30vh;
 }
 
 
@@ -30,23 +33,23 @@
 }
 
 .clientes-icon-container {
-    width: 100vw;
-    height: 20vh;
+    width: 160vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .clientes-icon-container img {
-    margin-top: auto;
-    padding-top: 3vh;
-    width: 30%;
-    height: 80%;
+    padding-top: 5vh;
+    width: 25%;
+    height: 90%;
 }
 
 .main-text-clientes-container {
     z-index: 10;
     height: 25vh;
-    width: 100vw;
+    width: 160vw;
     min-width: 320px;
     min-height: 120px;
     text-align: center;
@@ -109,3 +112,27 @@
     margin-top: 15vh;
     margin-bottom: 10vh;
 }
+
+
+.carrusel-main-container-clientes {
+    width: 160vw;
+    height: 40vh;
+}
+
+
+.carousel-image-clientes {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 15%;
+    width: 140%;
+    height: 70%;
+}
+
+.carousel-image-short-clientes {
+    width: 140%;
+    height: 70%;
+}
+
+  

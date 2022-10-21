@@ -1,21 +1,22 @@
 .productos-main-container {
-    width: 100vw;
-    height: 100vh;
+    width: 160vw;
+    height: 170vh;
     background-color: #ececec;
 }
 
 .productos-text-container {
-    width: 100vw;
-    height: 10vh;
+    width: 160vw;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: end;
+    font-size: 6rem;
 }
 
 .productos-category-container {
     z-index: 10;
-    height: 80vh;
-    width: 100vw;
+    height: 150vh;
+    width: 160vw;
     min-width: 320px;
     text-align: center;
   }
@@ -24,7 +25,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 100%;
+    height: 170vh;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -40,9 +41,9 @@
   }
   .productos-card {
     scroll-snap-align: center;
-    min-width: 220px;
-    height: 60vh;
-    width: 40vw;
+    min-width: 420px;
+    height: 150vh;
+    width: 70vw;
     border: 5px solid rgb(255, 102, 0);
     border-radius: 15px;
     display: flex;
@@ -98,34 +99,6 @@
     background-size: cover;
   }
 
-  .productos-card-in-left {
-    display: none;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    overflow-y: scroll;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: y proximity;
-  }
-
-  .productos-card-in-right {
-    display: none;
-    gap: 15px;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: y proximity;
-  }
-
   .card-in--item {
     display: none;
     width: 80%;
@@ -174,36 +147,36 @@
   }
 
   .active_1 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
   }
   .active_2 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
     
   }
   .active_3 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
    
   }
   .active_4 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
     
   }
   .active_5 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
   
   }
   .active_6 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
 
   }
   .active_7 {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: select;
   }
 
@@ -335,3 +308,60 @@
   font-size: 3rem;
   width: 10vw;
 }
+
+/* Most of these styles could be removed but are for the demo to look better */
+
+
+#panels-p #panels-container-P {
+  height: 170vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(170, 21, 21);
+}
+#panels-p #panels-container-P .panels-producto {
+  position: relative;
+  margin-top: 100vh;
+  margin-right: 25px;
+  margin-left: 25px;
+  width: 70vw;
+  height: 25vh;
+  box-shadow: 0 18px 26px 18px rgb(90, 73, 30, 0.16);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  text-align: left;
+  border-radius: 25px;
+}
+#panels-p #panels-container-P .panels-producto img {
+  display: block;
+}
+
+
+
+#panels-p.align-top {
+  align-items: flex-start;
+}
+
+
+.panels-producto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
