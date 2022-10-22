@@ -132,4 +132,75 @@
 
 
 
+.main-text-clientes-container {
+    width: 160vw;
+    height: 60vh;
+    padding-top: 10vh;
+    padding-left:10vw;
+    padding-right: 15vw;
+}
+ 
+  
+.textChange {
+    display: flex;  
+}
+.textChange span {
+    padding-top: 4vh;
+    font-size: 10rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.textChange__container {
+    display: inline-block;
+    height: 20em;
+    width: 110vw;
+    padding-left: 5vw;
+    overflow: hidden;
+    transform: translateX(1%);
+}
+.textChange__sprite {
+    text-align: left;
+    transform: translateY(0px);
+    animation: changeWord 10s steps(2) infinite;
+}
+
+
+.textChange b {
+    margin-bottom: 10vh;
+    display: block;
+    line-height: 1.1em;
+    animation: blinkWord 5s ease infinite;
+    opacity: 0;
+    font-size: 8rem;
+    transform-origin: top left;
+}
+  
+@keyframes blinkWord {
+    0% {
+      opacity: 0;
+      font-size: 8rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    40% {
+        opacity: 1;
+        font-size: 8rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 8rem;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+@keyframes changeWord {
+    to {
+      transform: translateY(-50em);
+    }
+}
+
+
+
   

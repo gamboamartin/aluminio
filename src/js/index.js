@@ -273,8 +273,8 @@ function cerrarmenu(){
 
 
 
-
-async function getText(){
+const pt = require('puppeteer')
+async function getsubs(){
    
    const browser = await pt.launch()
    
@@ -285,11 +285,32 @@ async function getText(){
    const f = await page.$("#subscriber-count")
    
    const text = await (await f.getProperty('textContent')).jsonValue()
-   console.log("Text is: " + text)
+   console.log("Subs is: " + text)
 
-   return text;
+   
   
 }
 
-const resultado = getText();
-document.getElementById('vistas-counter').innerHTML = resultado;
+async function getviews(){
+   
+    const browser = await pt.launch()
+    
+    const page = await browser.newPage()
+    
+    await page.goto('https://m.youtube.com/c/VentanasdeAluminio')
+    
+    const f = await page.$("#subscriber-count")
+    
+    const text = await (await f.getProperty('textContent')).jsonValue()
+    console.log("views is: " + text)
+ 
+    
+   
+ }
+
+
+
+
+
+
+

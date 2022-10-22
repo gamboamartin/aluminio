@@ -1,24 +1,6 @@
-
-Animar Texto
-
+desarrollar view escritorio
+ajustar preguntas frecuentes a dis
 contador de suscriptores
-contador de vistas
-
-resize imagenes de carrusel principal 
-tiempos animacion de productos rapido
-
-
-quitar foto de gordo rojo
-ajustar preguntas frecuentes a dise
-
-actualizar imagenes de seccion clientes
-Ajustar contacto stilos y redes iconos
-Actualizar colores de boton cotiza
-
-desarollar view escritorio
-
-agregar link de whatsapp seria mismo link en boton de contacto
-hacer mas chicas los circulos de header
-icono de youtube manda a canal directamente
+contador de visitas
 
 
