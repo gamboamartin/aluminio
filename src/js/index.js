@@ -1,3 +1,9 @@
+
+
+
+const pt = require('puppeteer')
+
+
 $('.carousel').carousel({
     interval: 2000,
     number: 4
@@ -249,7 +255,6 @@ function abrirmenu() {
     
     
     
-    menuprincipal-cerrar
 }
 
 function cerrarmenu(){
@@ -264,3 +269,27 @@ function cerrarmenu(){
 }
 
 
+
+
+
+
+
+async function getText(){
+   
+   const browser = await pt.launch()
+   
+   const page = await browser.newPage()
+   
+   await page.goto('https://m.youtube.com/c/VentanasdeAluminio')
+   
+   const f = await page.$("#subscriber-count")
+   
+   const text = await (await f.getProperty('textContent')).jsonValue()
+   console.log("Text is: " + text)
+
+   return text;
+  
+}
+
+const resultado = getText();
+document.getElementById('vistas-counter').innerHTML = resultado;
