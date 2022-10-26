@@ -1,0 +1,137 @@
+.Youtube {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo);
+    position: fixed;
+    z-index: 2;
+    top: 100vh;
+    
+}
+
+.youtube_data {
+    height: 60vh;
+    width: 100vw;
+    padding-top: 10vh;
+}
+
+.youtube_data_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 30px;
+}
+
+.youtube_data_text_1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 8rem;
+}
+
+.youtube_data_text_2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 9rem;
+    text-align: center;
+    letter-spacing: 15px;
+    line-height: 8rem;
+}
+.suscriptores_contador {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.vistas_contador {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.youtube-icon {
+    text-align: center;
+}
+
+.youtube-icon-img {
+    width: 40%;
+    margin: 5%;
+}
+
+.main-videos-container{
+    width: 100vw;
+    min-width: 100vw;
+    text-align: center;
+}
+
+.videos-container--slider{
+    padding-left: 2vw;
+    padding-right: 10vw;
+    display: flex;
+    gap: 20px;
+    height: 30vh;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.videos-container--card {
+    scroll-snap-align: center;
+    width: 70vw;
+    height: 10vh;
+    min-width: 45vw;
+    max-width: 45vw;
+    background-color: aqua;
+    border-radius: 3rem;
+    box-shadow: 0 4px 8px rgb(90, 73, 30, 0.16);
+}
+
+.videos-container--card img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 3rem;
+}
+
+
+
+@keyframes subir {
+    from {
+        top: 100vh;
+    }
+    
+    to {
+        top: 0vh;
+    }
+
+}
+
+@keyframes bajar {
+    0% {
+        top: 0vh;
+    }
+    
+    100% {
+        top: 100vh;
+    }
+}
+
+
+.subir {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: subir;
+    z-index: 10;
+}
+
+.bajar {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: bajar;
+    z-index: 0;
+}

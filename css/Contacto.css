@@ -1,0 +1,169 @@
+.Contacto {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo);
+    position: fixed;
+    z-index: 5;
+    top: 100vh;
+}
+
+@keyframes subir {
+    from {
+        top: 100vh;
+    }
+    
+    to {
+        top: 0vh;
+    }
+
+}
+
+@keyframes bajar {
+    0% {
+        top: 0vh;
+    }
+    
+    100% {
+        top: 100vh;
+    }
+}
+
+
+.subir {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: subir;
+    z-index: 10;
+}
+
+.bajar {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: bajar;
+    z-index: 0;
+}
+
+.main-contacto-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-main--text {
+    width: 100vw;
+    height: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 1.2px;
+}
+
+.mapa-direccion{
+    width: 100vw;
+    height: 15vh;
+    margin-bottom: 2vh;
+}
+
+.mapa-direccion-img{
+    width: 100vw;
+    height: 15vh;
+}
+
+.banner-redes-sociales{
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-redes-sociales a img{
+    width: 16vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-banner-contactos {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 2vh;
+}
+
+.diseño-banner-contactos {
+    background-color: #ececec;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px 15px rgba(102, 102, 102, 0.279);
+    width: 85vw;
+    height: 8vh;
+    margin-top: 1.5vh;
+    margin-left: 7vw;
+}
+
+
+
+.diseño-banner-contactos a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+}
+
+
+
+.diseño-banner-contactos h1{
+    font-size: 4rem;
+    margin-left: 2vw;
+    color: gray;
+}
+
+
+
+.diseño-banner-contactos img{
+    width: 8vw;
+    height: 4vh;
+    filter: invert(55%) sepia(5%) saturate(148%) 
+    hue-rotate(169deg) brightness(88%) contrast(96%);
+}
+
+.botones-naranjas-contactos {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.diseño-botones-privydesc {
+    height: 6vh;
+    width: 35vw;
+    margin-top: 4vh;
+    background-color: rgb(240, 125, 17);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px 15px rgba(102, 102, 102, 0.279);
+}
+
+.aviso-privacidad--texto {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.descarga-garantia--texto {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}

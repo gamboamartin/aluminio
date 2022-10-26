@@ -1,0 +1,65 @@
+.Carousel {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo);
+    position: fixed;
+    z-index: 1;
+    top: 0vh;
+    
+}
+
+.carrusel-main-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.carousel-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.carousel-image-short {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+@keyframes subir {
+    from {
+        top: 100vh;
+    }
+    
+    to {
+        top: 0vh;
+    }
+
+}
+
+@keyframes bajar {
+    0% {
+        top: 0vh;
+    }
+    
+    100% {
+        top: 100vh;
+    }
+}
+
+
+.subir {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: subir;
+    z-index: 10;
+}
+
+.bajar {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: bajar;
+    z-index: 0;
+}
