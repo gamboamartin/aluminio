@@ -7,55 +7,6 @@
     top: 100vh;
 }
 
-.main-productos-container{
-    width: 100vw;
-    min-width: 100vw;
-    padding-bottom: 10vh;
-    text-align: center;
-}
-
-.productos-container--slider{
-    padding-left: 5vw;
-    padding-right: 5vw;
-    display: flex;
-    gap: 10px;
-    height: 60vh;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
-
-.productos-container--card {
-    scroll-snap-align: center;
-    width: 50vw;
-    height: 50vh;
-    min-width: 50vw;
-    max-width: 50vw;
-    border: 1rem solid rgb(255, 60, 0);
-    border-radius: 15px;
-    box-shadow: 0 2rem 2rem rgb(90, 73, 30, 0.36);
-}
-
-.productos-container--card img{
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.productos-text {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    padding-top: 15vh;
-}
-
-.productos-text h1{
-    font-size: 5rem;
-    font-weight: 700;
-}
 
 @keyframes subir {
     from {
@@ -92,3 +43,376 @@
     animation-name: bajar;
     z-index: 0;
 }
+
+.productos-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo);
+}
+
+.productos-text-container {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 5rem;
+}
+
+.productos-text-container h1{
+    font-size: 5rem;
+}
+
+.productos-category-container {
+    z-index: 3;
+    height: 80vh;
+    width: 100vw;
+    min-width: 320px;
+    text-align: center;
+  }
+  
+  .productos-slider {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    height: 70vh;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-items: flex-start;
+    align-items: center;
+  }
+  
+  .productos-card-primera {
+    margin-left: 200vw;
+  }
+  .productos-card-ultima {
+    margin-right: 10vw;
+  }
+
+  .productos-card {
+    scroll-snap-align: center;
+    min-width: 420px;
+    height: 60vh;
+    width: 70vw;
+    border: 5px solid rgb(255, 102, 0);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .productos-card:nth-child(1) {
+    background-image: url("/assets/Productos/BARANDALES/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(2) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(3) {
+    background-image: url("/assets/Productos/DOMOSYTECHOS/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(4) {
+    background-image: url("/assets/Productos/PROYECTOSCOMERCIALES/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(5) {
+    background-image: url("/assets/Productos/PROYECTOSRESIDENCIALES/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(6) {
+    background-image: url("/assets/Productos/PUERTASDEALUMINIO/001.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-card:nth-child(7) {
+    background-image: url("/assets/productos-imgs/VENTANASDEALUMINIO/0013.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-in--item {
+    display: none;
+    width: 80%;
+    height: 25%;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    min-width: 100px;
+    max-width: 300px;
+    background-color: rgb(92, 92, 92);
+  }
+
+  .not-active_1 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_2 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_3 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_4 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_5 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_6 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+  .not-active_7 {
+    opacity: 50%;
+    height: 50vh;
+    width: 30vw;
+  }
+
+  .active_1 {
+    animation-duration: 2s;
+    animation-name: select;
+  }
+  .active_2 {
+    animation-duration: 2s;
+    animation-name: select;
+    
+  }
+  .active_3 {
+    animation-duration: 2s;
+    animation-name: select;
+   
+  }
+  .active_4 {
+    animation-duration: 2s;
+    animation-name: select;
+    
+  }
+  .active_5 {
+    animation-duration: 2s;
+    animation-name: select;
+  
+  }
+  .active_6 {
+    animation-duration: 2s;
+    animation-name: select;
+
+  }
+  .active_7 {
+    animation-duration: 2s;
+    animation-name: select;
+  }
+
+
+
+
+  @keyframes select {
+    0% {
+      opacity: 50%;
+      height: 50vh;
+      width: 30vw;
+      border: 5px solid rgb(255, 102, 0);
+    }
+    50% {
+      border: 15px solid rgb(255, 102, 0);
+    }
+
+    100% {
+      height: 60vh;
+      width: 40vw;
+      border: 5px solid rgb(255, 102, 0);
+    }
+  }
+
+.productos-open-main-section {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ececec;
+}
+
+.text-open-container {
+  height: 13vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text-open-container h1 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.productos-open-scroll-container {
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+}
+.productos-open-slider-left {
+  display: flex;
+  padding-top: 5vh;
+  gap: 5px;
+  overflow-x: scroll;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+  height: 100%;
+  width: 50%;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+
+.productos-open-slider-right {
+  display: flex;
+  padding-top: 3vh;
+  gap: 5px;
+  overflow-x: scroll;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+  height: 100%;
+  width: 50%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.productos-open-card {
+  scroll-snap-align: center;
+  width: 70%;
+  height: 75vh;
+  min-width: 100px;
+  max-width: 140px;
+  min-height: 200px;
+  max-height: 240px;
+  border-radius: 15px;
+}
+
+.boton-cerrar-productos-open {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 50%;
+  margin-left: 80vw;
+
+}
+
+.boton-cerrar-productos-open img {
+  width: 40%;
+}
+
+
+.pregunta-frecuente-abrir {
+  width: 80vw;
+  height: 5vh;
+  background-color: #ececec;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.pregunta-frecuente-abrir h1{
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+.pregunta-frecuente-abrir :nth-child(1) {
+  font-size: 2rem;
+  width: 70vw;
+  padding-left: 5%;
+}
+
+.pregunta-frecuente-abrir :nth-child(2) {
+  font-size: 3rem;
+  width: 10vw;
+}
+
+/* Most of these styles could be removed but are for the demo to look better */
+
+
+#panels-p #panels-container-P {
+  height: 170vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(170, 21, 21);
+}
+#panels-p #panels-container-P .panels-producto {
+  position: relative;
+  margin-top: 100vh;
+  margin-right: 25px;
+  margin-left: 25px;
+  width: 70vw;
+  height: 25vh;
+  box-shadow: 0 18px 26px 18px rgb(90, 73, 30, 0.16);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  text-align: left;
+  border-radius: 25px;
+}
+#panels-p #panels-container-P .panels-producto img {
+  display: block;
+}
+
+
+
+#panels-p.align-top {
+  align-items: flex-start;
+}
+
+
+.panels-producto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+

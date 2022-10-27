@@ -44,11 +44,6 @@ window.addEventListener('DOMContentLoaded', function () {
         if(value > 3400 && value < 5000) {
             i = 2
             subir()
-            sliderProductos.scroll({
-                top: 0,
-                left: ScrollProductos+=50,
-                behavior: 'smooth'
-              });
         }
         if(value > 5000 && value < 6000) {
             i = 3
@@ -72,11 +67,6 @@ window.addEventListener('DOMContentLoaded', function () {
             sliderYouTube.scroll({
                 top: 0,
                 left: ScrollYouTube-=ScrollYouTube,
-                behavior: 'smooth'
-              });
-              sliderProductos.scroll({
-                top: 0,
-                left: ScrollProductos-=ScrollProductos,
                 behavior: 'smooth'
               });
               sliderProceso.scroll({

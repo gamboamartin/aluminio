@@ -26,6 +26,7 @@
     <script src="/js/Carousel.js"></script>
     <script src="/js/Header.js"></script>
     <script src="/js/Youtube.js"></script>
+    <script src="/js/Productos.js"></script>
 </head>
 <body>
     <header class="header-main-container">
@@ -171,42 +172,21 @@
             </div>
         </section>
         <section id="Productos" class="Productos">
-            <div class="productos-text">
-              <h1>PRODUCTOS</h1>
+          <section class="productos-main-container">
+            <div class="productos-text-container">
+                <h1>PRODUCTOS</h1>
             </div>
-            <div  class="main-productos-container">
-                <div id="sliderProductos" class="productos-container--slider">
-                  <a href="/productos-barandales.html">
-                    <div class="productos-container--card">
-                      <img src="./assets/Productos/BARANDALES/1.jpg" alt="">
-                    </div>
-                  </a>
-                  <a href="/productos-cancelesdebaño.html">
-                    <div class="productos-container--card">
-                      <img src="./assets/Productos/CANCELESDEBAÑO/1.jpg" alt="">
-                    </div>
-                  </a>
-                  <a href="/productos-domosytechos.html">                   
-                    <div class="productos-container--card">
-                      <img src="./assets/Productos/DOMOSYTECHOS/1.jpg" alt="">
-                    </div>
-                  </a>
-                  <a href="/productos-proyectoscomerciales.html">                    
-                    <div class="productos-container--card">
-                      <img src="./assets/Productos/PROYECTOSRESIDENCIALES/1.jpg" alt="">
-                    </div>
-                  </a>
-                  <a href="/productos-puertasdealuminio.html">                    <div class="productos-container--card">
-                    <img src="./assets/Productos/PUERTASDEALUMINIO/001.jpg" alt="">
-                      </div>
-                    </a>
-                    <a href="/productos-ventanasdealuminio.html">
-                    <div class="productos-container--card">
-                      <img src="./assets/Productos/VENTANASDEALUMINIO/0013.jpg" alt="">
-                    </div>
-                  </a>
+            <div class="productos-category-container">
+                <div class="productos-slider">
+                    <a  id="card-1" onclick="seleccionar_1()" class="not-active_1 productos-card productos-card-primera"></a>
+                    <a  id="card-2" onclick="seleccionar_2()" class="not-active_2 productos-card"></a>
+                    <a  id="card-3" onclick="seleccionar_3()" class="not-active_3 productos-card"></a>
+                    <a  id="card-4" onclick="seleccionar_4()" class="not-active_4 productos-card"></a>
+                    <a  id="card-5" onclick="seleccionar_5()" class="not-active_5 productos-card"></a>
+                    <a  id="card-6" onclick="seleccionar_6()" class="not-active_6 productos-card productos-card-ultima" ></a>
                 </div>
             </div>
+        </section>
         </section>
         <section id="Clientes" class="Clientes">
             <div class="clientes-text-container">
