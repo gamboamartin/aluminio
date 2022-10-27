@@ -1,4 +1,4 @@
-
+/*
 import pt from "./../node_modules/puppeteer"
 
 
@@ -39,4 +39,4 @@ async function getsubs(){
   getviews()
   getsubs()
  
- 
+ */

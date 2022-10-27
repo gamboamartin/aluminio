@@ -15,3 +15,226 @@
         var cerrar = document.getElementById("menuprincipal-cerrar");
         cerrar.classList.add("header-menubotton-container-cerrar")
     }
+
+
+    function IrInicio() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[0].classList.remove("bajar");
+        paneles[0].classList.add("subir");
+
+        paneles[5].classList.remove("subir");
+        paneles[5].classList.add("bajar");
+        
+        paneles[4].classList.remove("subir");
+        paneles[4].classList.add("bajar");
+
+        paneles[3].classList.remove("subir");
+        paneles[3].classList.add("bajar");
+
+        paneles[2].classList.remove("subir");
+        paneles[2].classList.add("bajar");
+
+        paneles[1].classList.remove("subir");
+        paneles[1].classList.add("bajar");
+
+        this.window.scroll(0, -8300)
+    }
+
+    function IrYouTube() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[1].classList.remove("bajar");
+        paneles[1].classList.add("subir");
+
+        paneles[5].classList.remove("subir");
+        paneles[5].classList.add("bajar");
+        
+        paneles[4].classList.remove("subir");
+        paneles[4].classList.add("bajar");
+
+        paneles[3].classList.remove("subir");
+        paneles[3].classList.add("bajar");
+
+        paneles[2].classList.remove("subir");
+        paneles[2].classList.add("bajar");
+
+        paneles[0].classList.remove("subir");
+        paneles[0].classList.add("bajar");
+
+        this.window.scroll(0, -7300)
+    }
+
+    function IrProductos() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[2].classList.remove("bajar");
+        paneles[2].classList.add("subir");
+
+        paneles[5].classList.remove("subir");
+        paneles[5].classList.add("bajar");
+        
+        paneles[4].classList.remove("subir");
+        paneles[4].classList.add("bajar");
+
+        paneles[3].classList.remove("subir");
+        paneles[3].classList.add("bajar");
+
+        paneles[0].classList.remove("subir");
+        paneles[0].classList.add("bajar");
+
+        paneles[1].classList.remove("subir");
+        paneles[1].classList.add("bajar");
+
+        this.window.scroll(0, -4,900)
+    }
+
+    function IrClientes() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[3].classList.remove("bajar");
+        paneles[3].classList.add("subir");
+
+        paneles[5].classList.remove("subir");
+        paneles[5].classList.add("bajar");
+        
+        paneles[4].classList.remove("subir");
+        paneles[4].classList.add("bajar");
+
+        paneles[0].classList.remove("subir");
+        paneles[0].classList.add("bajar");
+
+        paneles[2].classList.remove("subir");
+        paneles[2].classList.add("bajar");
+
+        paneles[1].classList.remove("subir");
+        paneles[1].classList.add("bajar");
+
+        this.window.scroll(0, -3300)
+    }
+
+    function IrProceso() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[4].classList.remove("bajar");
+        paneles[4].classList.add("subir");
+
+        paneles[5].classList.remove("subir");
+        paneles[5].classList.add("bajar");
+        
+        paneles[0].classList.remove("subir");
+        paneles[0].classList.add("bajar");
+
+        paneles[3].classList.remove("subir");
+        paneles[3].classList.add("bajar");
+
+        paneles[2].classList.remove("subir");
+        paneles[2].classList.add("bajar");
+
+        paneles[1].classList.remove("subir");
+        paneles[1].classList.add("bajar");
+
+        this.window.scroll(0, -2300)
+    }
+
+    function IrContacto() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[5].classList.remove("bajar");
+        paneles[5].classList.add("subir");
+
+        paneles[0].classList.remove("subir");
+        paneles[0].classList.add("bajar");
+        
+        paneles[4].classList.remove("subir");
+        paneles[4].classList.add("bajar");
+
+        paneles[3].classList.remove("subir");
+        paneles[3].classList.add("bajar");
+
+        paneles[2].classList.remove("subir");
+        paneles[2].classList.add("bajar");
+
+        paneles[1].classList.remove("subir");
+        paneles[1].classList.add("bajar");
+
+        this.window.scroll(0, -1300)
+    }
