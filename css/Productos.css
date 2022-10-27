@@ -10,7 +10,6 @@
 .main-productos-container{
     width: 100vw;
     min-width: 100vw;
-    padding-top: 30vh;
     padding-bottom: 10vh;
     text-align: center;
 }
@@ -20,7 +19,7 @@
     padding-right: 5vw;
     display: flex;
     gap: 10px;
-    height: 40vh;
+    height: 60vh;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -29,12 +28,26 @@
 .productos-container--card {
     scroll-snap-align: center;
     width: 50vw;
-    height: 40vh;
+    height: 50vh;
     min-width: 50vw;
     max-width: 50vw;
     background-color: aqua;
+    border: 1rem solid rgb(255, 136, 0);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgb(90, 73, 30, 0.16);
+    box-shadow: 0 2rem 2rem rgb(90, 73, 30, 0.36);
+}
+
+.productos-text {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
+}
+
+.productos-text h1{
+    font-size: 5rem;
+    font-weight: 700;
 }
 
 @keyframes subir {

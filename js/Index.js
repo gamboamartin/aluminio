@@ -1,5 +1,3 @@
-//Control de Scroll en X,Y
-//Este codigo se encarga de controlar todo el scroll 
 window.addEventListener('DOMContentLoaded', function () {
     //Elementos Principales 
     var Carousel = document.getElementById("Carousel");
@@ -9,8 +7,9 @@ window.addEventListener('DOMContentLoaded', function () {
     var Proceso = document.getElementById("Proceso");
     var Contacto = document.getElementById("Contacto");
     //Elementos de scroll hibrido
-    let slider = document.getElementById("test");
-    
+    let sliderYouTube = document.getElementById("sliderYouTube");
+    let sliderProductos = document.getElementById("sliderProductos");
+    let sliderProceso = document.getElementById("sliderProceso");
 
     const paneles = [
         Carousel, 
@@ -23,71 +22,45 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let value = 0;
     let i = 0;
-    let ScrollYouTube = 0;
-
-    function IrProceso() {
-        i = 0;
-        subir() 
-    }
-    
-    function IrContacto() {
-        i = 1;
-        subir() 
-    }
-    
-    function IrInicio() {
-        i = 2;
-        subir() 
-    }
-    
-    function IrYouTube() {
-        i = 3;
-        subir() 
-    }
-    
-    function IrProductos() {
-        i = 4;
-        subir() 
-    }
-    
-    function IrClientes() {
-        i = 5;
-        subir() 
-    }
-
-    function subir() {
-        paneles[i].classList.remove("bajar");
-        paneles[i].classList.add("subir");
-    }
+    let ScrollYouTube = -400;
+    let ScrollProductos = -600;
+    let ScrollProceso = -600;
 
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
-        if(value > 0 && value < 290) {
+        console.log(value)
+        if(value > 0 && value < 1000) {
             i = 0
             subir()
         }
-        if(value > 290 && value < 580) {
+        if(value > 1000 && value < 3500) {
             i = 1
             subir()
+            sliderYouTube.scroll(ScrollYouTube = ScrollYouTube + 100, 0);
         }
-        if(value > 580 && value < 870) {
+        if(value > 3500 && value < 4500) {
             i = 2
             subir()
+            sliderProductos.scroll(ScrollProductos = ScrollProductos + 100, 0);
         }
-        if(value > 870 && value < 1160) {
+        if(value > 4500 && value < 5500) {
             i = 3
             subir()
         }
-        if(value > 1160 && value < 1450) {
+        if(value > 5500 && value < 7000) {
             i = 4
             subir()
+            sliderProceso.scroll(ScrollProceso = ScrollProceso + 140, 0);
         }
-        if(value > 1450 && value < 1743) {
+        if(value > 7000 && value < 8000) {
             i = 5
             subir()
         }
-        if(value > 1743) {
-            this.window.scroll(-1743, 0)
+        if(value > 8000) {
+            this.window.scroll(0, -8000)
+            sliderYouTube.scroll(ScrollYouTube = - ScrollYouTube - ScrollYouTube ,0);
+            sliderProductos.scroll(ScrollProductos = ScrollProductos - ScrollProductos, 0);
+            sliderProceso.scroll(ScrollProceso = ScrollProceso - ScrollProceso, 0);
             i = 0
             ScrollYouTube = 0;
             bajar()
@@ -118,10 +91,11 @@ window.addEventListener('DOMContentLoaded', function () {
             paneles[0].classList.add("bajar");
         }
     })
-    window.addEventListener("scroll", function () {
-        slider.scroll(ScrollYouTube = ScrollYouTube + 10, 0);
-    })
 })
+
+
+
+
 
 
 
