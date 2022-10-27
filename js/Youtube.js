@@ -1,4 +1,6 @@
-const pt = require('puppeteer')
+
+import pt from "./../node_modules/puppeteer"
+
 
 async function getsubs(){
    

@@ -22,47 +22,69 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let value = 0;
     let i = 0;
-    let ScrollYouTube = -400;
-    let ScrollProductos = -600;
-    let ScrollProceso = -600;
+    let ScrollYouTube = 0;
+    let ScrollProductos = 0;
+    let ScrollProceso = 0;
 
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
-        console.log(value)
         if(value > 0 && value < 1000) {
             i = 0
             subir()
         }
-        if(value > 1000 && value < 3500) {
+        if(value > 1000 && value < 3400) {
             i = 1
             subir()
-            sliderYouTube.scroll(ScrollYouTube = ScrollYouTube + 100, 0);
+            sliderYouTube.scroll({
+                top: 0,
+                left: ScrollYouTube+=100,
+                behavior: 'smooth'
+              });
         }
-        if(value > 3500 && value < 4500) {
+        if(value > 3400 && value < 5000) {
             i = 2
             subir()
-            sliderProductos.scroll(ScrollProductos = ScrollProductos + 100, 0);
+            sliderProductos.scroll({
+                top: 0,
+                left: ScrollProductos+=50,
+                behavior: 'smooth'
+              });
         }
-        if(value > 4500 && value < 5500) {
+        if(value > 5000 && value < 6000) {
             i = 3
             subir()
         }
-        if(value > 5500 && value < 7000) {
+        if(value > 6000 && value < 7300) {
             i = 4
             subir()
-            sliderProceso.scroll(ScrollProceso = ScrollProceso + 140, 0);
+            sliderProceso.scroll({
+                top: 0,
+                left: ScrollProceso+=80,
+                behavior: 'smooth'
+              });
         }
-        if(value > 7000 && value < 8000) {
+        if(value > 7300 && value < 8300) {
             i = 5
             subir()
         }
-        if(value > 8000) {
-            this.window.scroll(0, -8000)
-            sliderYouTube.scroll(ScrollYouTube = - ScrollYouTube - ScrollYouTube ,0);
-            sliderProductos.scroll(ScrollProductos = ScrollProductos - ScrollProductos, 0);
-            sliderProceso.scroll(ScrollProceso = ScrollProceso - ScrollProceso, 0);
+        if(value > 8300) {
+            this.window.scroll(0, -8300)
+            sliderYouTube.scroll({
+                top: 0,
+                left: ScrollYouTube-=ScrollYouTube,
+                behavior: 'smooth'
+              });
+              sliderProductos.scroll({
+                top: 0,
+                left: ScrollProductos-=ScrollProductos,
+                behavior: 'smooth'
+              });
+              sliderProceso.scroll({
+                top: 0,
+                left: ScrollProceso-=ScrollProceso,
+                behavior: 'smooth'
+              });
             i = 0
-            ScrollYouTube = 0;
             bajar()
         }
     
