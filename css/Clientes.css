@@ -17,7 +17,7 @@
 }
 
 .clientes-text-container h1{
-    padding-top: 20%;
+    padding-top: 15%;
     font-size: 6rem;
     font-weight: 400;
     margin-bottom: 1vh;
@@ -25,9 +25,9 @@
 
 .clientes-img-container {
     width: 100vw;
-    height: 30vh;
+    height: 35vh;
     background-color: white;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 
@@ -140,7 +140,7 @@
 .main-text-clientes-container {
     width: 100vw;
     height: 30vh;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 5vw;
 }
  
