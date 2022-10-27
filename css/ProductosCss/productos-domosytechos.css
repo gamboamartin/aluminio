@@ -1,0 +1,147 @@
+.productos-slider-mid-left :nth-child(1) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(2) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/10.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(3) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/11.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(4) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/12.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(5) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/13.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(6) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/14.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(7) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/15.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(8) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-left :nth-child(9) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-left :nth-child(10) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  
+
+  /*-----------------------------*/
+  
+  
+  .productos-slider-mid-right :nth-child(1) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/16.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(2) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/17.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(3) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/18.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(4) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/19.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(5) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(6) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/20.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(7) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(8) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(9) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(10) {
+    background-image: url("/assets/productos-imgs/DOMOSYTECHOS/6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+

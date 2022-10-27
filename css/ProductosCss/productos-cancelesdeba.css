@@ -1,0 +1,199 @@
+.productos-slider-mid-left :nth-child(1) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(2) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/10.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(3) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/11.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(4) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/12.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(5) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/13.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(6) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/14.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(7) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/15.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(8) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/16.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(9) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/17.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(10) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/18.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(11) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/19.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-left :nth-child(12) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-left :nth-child(13) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-left :nth-child(14) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+
+  /*-----------------------------*/
+  
+  
+  .productos-slider-mid-right :nth-child(1) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/20.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(2) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/21.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(3) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/22.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(4) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/23.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(5) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/24.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(6) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/25.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(7) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/26.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(8) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/27.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(9) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/28.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(10) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .productos-slider-mid-right :nth-child(11) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-right :nth-child(12) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-right :nth-child(13) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .productos-slider-mid-right :nth-child(14) {
+    background-image: url("/assets/Productos/CANCELESDEBAÑO/8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }

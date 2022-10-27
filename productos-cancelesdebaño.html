@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/src/js/index.js"></script>
-    <script src="/src/js/proceso.js"></script>
+    <link rel="stylesheet" href="/css/Index.css">
+    <link rel="stylesheet" href="/css/Productos.css">
+    <link rel="stylesheet" href="/css/Header.css">
+    <link rel="stylesheet" href="/css/Cotiza.css">
+    <link rel="stylesheet" href="/css/WhatsApp.css">
+    <link rel="stylesheet" href="/css/ProductosCss/productos-cancelesdeba.css">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/boton_cotiza.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css//boton_whatsapp.css">
-    <link rel="stylesheet" href="/assets/css/carrusel.css">
-    <link rel="stylesheet" href="/assets/css/youtube_view.css">
-    <link rel="stylesheet" href="/assets/css/main-proceso-container.css">
-    <link rel="stylesheet" href="assets/css/main-contacto-container.css">
-    <link rel="stylesheet" href="/assets/css/clientes.css">
-    <link rel="stylesheet" href="/assets/css/productos.css">
-    <link rel="stylesheet" href="/assets/css/productos-cancelesdeba.css">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/Header.js"></script>
+    <script src="/js/Productos.js"></script>
     <title>Productos</title>
 </head>
 <body>
     <header class="header-main-container">
         <section class="header-logo-container">
-            <img src="../assets/Vanguardia logo.png" alt="">
+            <img src="./assets/Header/Vanguardia logo.png" alt="">
         </section>
-        <section class="header-menubotton-container ">
+        <section id="menuprincipal-abrir" class="header-menubotton-container" onclick="abrirmenu()" ondblclick="cerrarmenu()">
             <div class="open-overlay">
                 <div class="bar-container">
                     <span class="bar--item"></span>
@@ -48,13 +34,37 @@
                 </div>
               </div>
         </section>
+        <section id="menuprincipal-cerrar" class="header-menubotton-container header-menubotton-container-cerrar" onclick="cerrarmenu()">
+          <div class="open-overlay">
+              <div class="bar-container">
+                  <span class="bar--item"></span>
+                  <span class="circle--item"></span>
+              </div>
+              <div class="bar-container">
+                  <span class="bar--item"></span>
+                  <span class="circle--item"></span>
+              </div>
+              <div class="bar-container">
+                  <span class="bar--item"></span>
+                  <span class="circle--item"></span>
+              </div>
+            </div>
+        </section>
+        <section id="menu-header-indice" class="header-menu-desplegable">
+          <div onclick="IrInicio()" class="diseño-banner-header">Inicio</div>
+          <div onclick="IrYouTube()"class="diseño-banner-header">Youtube</div>
+          <div onclick="IrProductos()"class="diseño-banner-header">Productos</div>
+          <div onclick="IrClientes()"class="diseño-banner-header">Clientes</div>
+          <div onclick="IrProceso()"class="diseño-banner-header">Proceso de compra</div>
+          <div onclick="IrContacto()"class="diseño-banner-header">Contacto</div>
+        </section>
     </header>
     <section class="productos-open-main-section">
         <div class="text-open-container">
             <h1>Canceles de baño</h1>
         </div>
         <a href="./index.html" class="boton-cerrar-productos-open">
-            <img src="/assets/54972.png" alt="">
+            <img src="/assets/Productos/54972.png" alt="">
         </a>
         <section class="productos-open-scroll-container">
             <section class="productos-open-slider-left productos-slider-mid-left">
@@ -103,16 +113,16 @@
             <h1>+</h1>
         </div>
     </section>
-    <section class="main-cotiza-botton-container">
-        <a class="cotiza-botton-container" href="">
-            <h1 class="cotiza-text">Cotiza en linea</h1>
-        </a>
-    </section>
     <section class="main-whatsapp-botton-container">
-        <a class="whatsapp-botton-container" href="">
+        <a class="whatsapp-botton-container" href="https://api.whatsapp.com/send?phone=+523314499988&text=Vanguardia%20Aluminio:">
             <h1 class="whatsapp-text">Envianos un</h1>
             <h1 class="whatsapp-text-bold">WhatsApp</h1>
             <img class="whatsapp-icon" src="https://imgs.search.brave.com/WvDlU9lrnieIJ5L7_FaEGvRlYPOgWZ-aGxKZSEpAcIM/rs:fit:1100:1105:1/g:ce/aHR0cHM6Ly9pbWFn/ZXBuZy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMTcvMDgv/V2hhdHNBcHAtaWNv/bmUtMy5wbmc" alt="whatsapp icone">
+        </a>
+    </section>
+    <section class="main-cotiza-botton-container">
+        <a class="cotiza-botton-container" href="https://form.jotform.com/222546162830048">
+            <h1 class="cotiza-text">Cotiza en linea</h1>
         </a>
     </section>
 </body>
