@@ -52,6 +52,7 @@
         paneles[1].classList.add("bajar");
 
         this.window.scroll(0, -8300)
+        cerrarmenu()
     }
 
     function IrYouTube() {
@@ -89,6 +90,7 @@
         paneles[0].classList.add("bajar");
 
         this.window.scroll(0, -7300)
+        cerrarmenu()
     }
 
     function IrProductos() {
@@ -126,6 +128,7 @@
         paneles[1].classList.add("bajar");
 
         this.window.scroll(0, -4,900)
+        cerrarmenu()
     }
 
     function IrClientes() {
@@ -163,6 +166,7 @@
         paneles[1].classList.add("bajar");
 
         this.window.scroll(0, -3300)
+        cerrarmenu()
     }
 
     function IrProceso() {
@@ -200,6 +204,7 @@
         paneles[1].classList.add("bajar");
 
         this.window.scroll(0, -2300)
+        cerrarmenu()
     }
 
     function IrContacto() {
@@ -237,4 +242,5 @@
         paneles[1].classList.add("bajar");
 
         this.window.scroll(0, -1300)
+        cerrarmenu()
     }

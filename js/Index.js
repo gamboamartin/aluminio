@@ -27,14 +27,17 @@ window.addEventListener('DOMContentLoaded', function () {
     let ScrollProceso = 0;
 
     window.addEventListener("scroll", function () {
+        console.log(i)
         value = this.window.scrollY
-        if(value > 0 && value < 1000) {
+        if(value > 0 && value < 2000) {
             i = 0
             subir()
+            bajar()
         }
-        if(value > 1000 && value < 3400) {
+        if(value > 2000 && value < 4000) {
             i = 1
             subir()
+            bajar()
             sliderYouTube.scroll({
                 top: 0,
                 left: ScrollYouTube+=100,
@@ -44,10 +47,17 @@ window.addEventListener('DOMContentLoaded', function () {
         if(value > 3400 && value < 5000) {
             i = 2
             subir()
+            bajar()
+            sliderProductos.scroll({
+                top: 0,
+                left: ScrollProductos+=100,
+                behavior: 'smooth'
+              });
         }
         if(value > 5000 && value < 6000) {
             i = 3
             subir()
+            bajar()
         }
         if(value > 6000 && value < 7300) {
             i = 4
@@ -61,6 +71,7 @@ window.addEventListener('DOMContentLoaded', function () {
         if(value > 7300 && value < 8300) {
             i = 5
             subir()
+            bajar()
         }
         if(value > 8300) {
             this.window.scroll(0, -8300)
@@ -84,23 +95,12 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     
         function bajar() {
-            paneles[5].classList.remove("subir");
-            paneles[5].classList.add("bajar");
-            
-            paneles[4].classList.remove("subir");
-            paneles[4].classList.add("bajar");
-
-            paneles[3].classList.remove("subir");
-            paneles[3].classList.add("bajar");
-
-            paneles[2].classList.remove("subir");
-            paneles[2].classList.add("bajar");
-
-            paneles[1].classList.remove("subir");
-            paneles[1].classList.add("bajar");
-
-            paneles[0].classList.remove("subir");
-            paneles[0].classList.add("bajar");
+            for (var j = 0; j < 6; j++) {
+                if(i != j) {
+                    paneles[j].classList.remove("subir");
+                    paneles[j].classList.add("bajar");
+                }
+            }
         }
     })
 })

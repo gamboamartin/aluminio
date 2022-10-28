@@ -34,7 +34,7 @@
     top: 0vh;
     animation-duration: 1s;
     animation-name: subir;
-    z-index: 10;
+    z-index: 11;
 }
 
 .bajar {
@@ -99,55 +99,55 @@
     border-radius: 15px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
-  .productos-card:nth-child(1) {
+  .productos-card:nth-child(5) {
     background-image: url("/assets/Productos/BARANDALES/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .productos-card:nth-child(2) {
+  .productos-card:nth-child(3) {
     background-image: url("/assets/Productos/CANCELESDEBAÑO/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .productos-card:nth-child(3) {
+  .productos-card:nth-child(4) {
     background-image: url("/assets/Productos/DOMOSYTECHOS/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .productos-card:nth-child(4) {
-    background-image: url("/assets/Productos/PROYECTOSCOMERCIALES/1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .productos-card:nth-child(5) {
+  .productos-card:nth-child(6) {
     background-image: url("/assets/Productos/PROYECTOSRESIDENCIALES/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .productos-card:nth-child(6) {
+  .productos-card:nth-child(2) {
     background-image: url("/assets/Productos/PUERTASDEALUMINIO/001.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .productos-card:nth-child(7) {
-    background-image: url("/assets/productos-imgs/VENTANASDEALUMINIO/0013.jpg");
+  .productos-card:nth-child(1) {
+    background-image: url("/assets/Productos/VENTANASDEALUMINIO/0013.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .productos-card h1 {
+    font-size: 4rem;
+    padding-top: 170%;
+    color: black;
   }
 
   .card-in--item {

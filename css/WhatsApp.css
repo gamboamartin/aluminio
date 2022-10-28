@@ -1,6 +1,6 @@
 .main-whatsapp-botton-container {
     position: fixed;
-    z-index: 110;
+    z-index: 100;
     width: 100vw;
     height: 8vh;
     top: 95vh;

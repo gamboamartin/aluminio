@@ -33,7 +33,7 @@
     top: 0vh;
     animation-duration: 1s;
     animation-name: subir;
-    z-index: 10;
+    z-index: 11;
 }
 
 .bajar {
@@ -85,8 +85,7 @@
 }
 
 .banner-redes-sociales a img{
-    width: 16vw;
-    height: 8vh;
+    width: 13vw;
     display: flex;
     justify-content: center;
 }

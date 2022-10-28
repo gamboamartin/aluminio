@@ -10,7 +10,7 @@
 }
 
 .cotiza-botton-container {
-    background: linear-gradient(-180deg, #cb6538, #ad6733);
+    background: rgb(240, 125, 17);
     border-top: 5px solid #ad6733;
     border-bottom: 5px solid #ad6733;
     border-left: 5px solid linear-gradient( #cb6538, #ad6733);
