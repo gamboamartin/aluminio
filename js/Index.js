@@ -27,7 +27,6 @@ window.addEventListener('DOMContentLoaded', function () {
     let ScrollProceso = 0;
 
     window.addEventListener("scroll", function () {
-        console.log(i)
         value = this.window.scrollY
         if(value > 0 && value < 2000) {
             i = 0
@@ -44,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
               });
         }
-        if(value > 3400 && value < 5000) {
+        if(value > 4000 && value < 6000) {
             i = 2
             subir()
             bajar()
@@ -54,12 +53,12 @@ window.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
               });
         }
-        if(value > 5000 && value < 6000) {
+        if(value > 6000 && value < 8000) {
             i = 3
             subir()
             bajar()
         }
-        if(value > 6000 && value < 7300) {
+        if(value > 8000 && value < 9000) {
             i = 4
             subir()
             sliderProceso.scroll({
@@ -68,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
               });
         }
-        if(value > 7300 && value < 8300) {
+        if(value > 9000 && value < 9000) {
             i = 5
             subir()
             bajar()

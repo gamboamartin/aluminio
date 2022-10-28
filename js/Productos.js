@@ -33,7 +33,7 @@
 
         setInterval(link, 1500);
         function link() {
-            location.href = "productos-barandales.html"
+            location.href = "productos-ventanasdealuminio.html"
         }
         
 
@@ -69,7 +69,7 @@
 
         setInterval(link, 1500);
         function link() {
-            location.href = "productos-cancelesdebaño.html"
+            location.href = "productos-puertasdealuminio.html"
         }
 
 
@@ -105,7 +105,7 @@
 
         setInterval(link, 1500);
         function link() {
-            location.href = "productos-domosytechos.html"
+            location.href = "productos-cancelesdebaño.html"
         }
 
 
@@ -141,7 +141,7 @@
 
         setInterval(link, 1500);
         function link() {
-            location.href = "productos-proyectoscomerciales.html"
+            location.href = "productos-domosytechos.html"
         }
 
 
@@ -177,7 +177,7 @@
 
         setInterval(link, 1500);
         function link() {
-            location.href = "productos-puertasdealuminio.html"
+            location.href = "productos-barandales.html"
         }
 
 
@@ -213,9 +213,17 @@
 
         setInterval(link, 1500);
         function link() {
-            location.href = "productos-ventanasdealuminio.html"
+            location.href = "productos-proyectoscomerciales.html"
         }
 
 
+    }
+
+    function CerrarProducto() {
+        location.href = "index.html"
+        setInterval(link, 15);
+        function link() {
+            IrProductos()
+        }
     }
 
