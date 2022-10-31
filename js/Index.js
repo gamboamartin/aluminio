@@ -100,12 +100,6 @@ window.addEventListener('DOMContentLoaded', function () {
             bajar()
             ReiniciarScroll()
         }
-        if(value > 32000) {
-            i = 0
-            this.window.scroll(0, -32000)
-            ReiniciarScroll()
-            bajar()
-        }
 
         function ReiniciarScroll() {
             sliderYouTube.scroll({
