@@ -219,11 +219,5 @@
 
     }
 
-    function CerrarProducto() {
-        location.href = "index.html"
-        setInterval(link, 15);
-        function link() {
-            IrProductos()
-        }
-    }
+
 

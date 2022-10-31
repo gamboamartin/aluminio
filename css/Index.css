@@ -12,12 +12,12 @@
     padding: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
-    scroll-behavior: inherit;
 }
 
 main {
     width: 100vw;
-    height: 600vh;
+    height: 2300vh;
+    scroll-behavior: smooth;
 }
 
 

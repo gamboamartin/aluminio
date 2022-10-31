@@ -51,7 +51,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, -8300)
+        this.window.scroll(0, 0)
         cerrarmenu()
     }
 
@@ -89,7 +89,7 @@
         paneles[0].classList.remove("subir");
         paneles[0].classList.add("bajar");
 
-        this.window.scroll(0, -7300)
+        this.window.scroll(0, 1000)
         cerrarmenu()
     }
 
@@ -127,9 +127,10 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, -4,900)
+        this.window.scroll(0, 15000)
         cerrarmenu()
     }
+
 
     function IrClientes() {
         var Carousel = document.getElementById("Carousel");
@@ -165,7 +166,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, -3300)
+        this.window.scroll(0, 19000)
         cerrarmenu()
     }
 
@@ -203,7 +204,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, -2300)
+        this.window.scroll(0, 20000)
         cerrarmenu()
     }
 
@@ -241,6 +242,11 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, -1300)
+        this.window.scroll(0, 30000)
         cerrarmenu()
+    }
+
+
+    function CerrarProducto() {
+        location.href = "index.html"
     }

@@ -74,12 +74,13 @@
     display: flex;
     gap: 20px;
     height: 30vh;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
 
 .videos-container--card {
+    margin-top: 10%;
     scroll-snap-align: center;
     width: 70vw;
     height: 10vh;
@@ -134,4 +135,5 @@
     animation-duration: 1s;
     animation-name: bajar;
     z-index: 0;
+    display: none;
 }

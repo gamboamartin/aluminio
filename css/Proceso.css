@@ -35,7 +35,7 @@
   display: flex;
   gap: 5px;
   height: 70vh;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
@@ -165,4 +165,5 @@
     animation-duration: 3s;
     animation-name: bajar;
     z-index: 0;
+    display: none;
 }

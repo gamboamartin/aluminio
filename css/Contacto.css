@@ -41,6 +41,7 @@
     animation-duration: 1s;
     animation-name: bajar;
     z-index: 0;
+    display: none;
 }
 
 .main-contacto-container{

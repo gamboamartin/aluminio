@@ -63,3 +63,27 @@
     animation-name: bajar;
     z-index: 0;
 }
+
+
+.carousel-control-aluminio-next {
+    padding-top: 70vh;
+    margin-right: 10vw;
+}
+
+.carousel-control-aluminio-prev {
+    padding-top: 70vh;
+    margin-left: 10vw;
+}
+
+.carousel-control-aluminio-next span {
+    height: 5rem;
+    width: 5rem;
+
+}
+
+.carousel-control-aluminio-prev span {
+    height: 5rem;
+    width: 5rem;
+    
+}
+
