@@ -15,17 +15,16 @@
 
 
 .carousel-image {
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
 
 }
 
 .carousel-image-short {
-    width: 100vw;
+    min-width: 140vw !important;
     height: 100vh;
 }
-
 
 
 @keyframes subir {
