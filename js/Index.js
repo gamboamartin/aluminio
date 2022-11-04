@@ -1,6 +1,4 @@
 window.addEventListener('DOMContentLoaded', function () {
-    let prevUrl = document.referrer ;
-    let ActualUrl = location.origin + location.pathname;
     //Elementos Principales 
     var Carousel = document.getElementById("Carousel");
     var Youtube = document.getElementById("Youtube");
@@ -9,9 +7,9 @@ window.addEventListener('DOMContentLoaded', function () {
     var Proceso = document.getElementById("Proceso");
     var Contacto = document.getElementById("Contacto");
     //Elementos de scroll hibrido
-    let sliderYouTube = document.getElementById("sliderYouTube");
-    let sliderProductos = document.getElementById("sliderProductos");
-    let sliderProceso = document.getElementById("sliderProceso");
+    let sliderYouTube = document.getElementsByClassName("videos-container--card");
+    let sliderProductos = document.getElementsByClassName("productos-card");
+    let sliderProceso = document.getElementsByClassName("proceso-slider--card");
 
     const paneles = [
         Carousel, 
@@ -24,20 +22,27 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let value = 0;
     let i = 0;
-    let ScrollYouTube = 0;
-    let ScrollProductos = 0;
-    let ScrollProceso = 0;
+    let ScrollYouTube;
+    let ScrollProductos;
+    let ScrollProceso;
 
-    if(prevUrl != ActualUrl )  {
+    let prevUrl = document.referrer;
+    let ActualUrl = location.origin + location.pathname;
+
+    if(prevUrl != ActualUrl)  {
         i = 2
         subir()
         bajar()
+        prevUrl = ActualUrl;
         sliderProductos.scroll({
             top: 0,
             left: ScrollProductos+=40,
             behavior: 'smooth'
         });
     }
+    console.log(prevUrl)
+    console.log(ActualUrl)
+
 
     function subir() {
         paneles[i].classList.remove("bajar");
@@ -54,69 +59,48 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
+        console.log(value)
         if(value > 0 && value < 1000) {
             i = 0
             subir()
             bajar()
         }
-        if(value > 1000 && value < 15000) {
+        if(value > 1000 && value < 7500) {
             i = 1
             subir()
             bajar()
-            sliderYouTube.scroll({
-                top: 0,
-                left: ScrollYouTube+=80,
-                behavior: 'smooth'
-            });
+            ScrollYouTube = value - 1000;
+            for (var y = 0; y < sliderYouTube.length; y++) {
+                sliderYouTube[y].style.transform = `translate(-${ScrollYouTube}px)`
+            }
+           
         }
-        if(value > 15000 && value < 19000) {
+        if(value > 7500 && value < 9600) {
             i = 2
             subir()
             bajar()
-            sliderProductos.scroll({
-                top: 0,
-                left: ScrollProductos+=40,
-                behavior: 'smooth'
-            });
+            ScrollProductos = value - 7600;
+            for (var y = 0; y < sliderProductos.length; y++) {
+                sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
+            }
         }
-        if(value > 19000 && value < 20000) {
+        if(value > 9600 && value < 10600) {
             i = 3
             subir()
             bajar()
-            ReiniciarScroll()
         }
-        if(value > 20000 && value < 30000) {
+        if(value > 10600 && value < 15650) {
             i = 4
             subir()
-            sliderProceso.scroll({
-                top: 0,
-                left: ScrollProceso+=60,
-                behavior: 'smooth'
-            });
+            ScrollProceso = value - 10800;
+            for (var y = 0; y < sliderProceso.length; y++) {
+                sliderProceso[y].style.transform = `translate(-${ScrollProceso}px)`
+            }
         }
-        if(value > 30000 && value < 31000) {
+        if(value > 15650 && value < 16650) {
             i = 5
             subir()
             bajar()
-            ReiniciarScroll()
-        }
-
-        function ReiniciarScroll() {
-            sliderYouTube.scroll({
-                top: 0,
-                left: ScrollYouTube-=ScrollYouTube,
-                behavior: 'smooth'
-            });
-              sliderProceso.scroll({
-                top: 0,
-                left: ScrollProceso-=ScrollProceso,
-                behavior: 'smooth'
-            });
-            sliderProductos.scroll({
-                top: 0,
-                left: ScrollProductos-=ScrollProductos,
-                behavior: 'smooth'
-            });
         }
     
         function subir() {
@@ -134,11 +118,6 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     })
 })
-
-
-
-
-
 
 
 
