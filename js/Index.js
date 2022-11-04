@@ -34,11 +34,6 @@ window.addEventListener('DOMContentLoaded', function () {
         subir()
         bajar()
         prevUrl = ActualUrl;
-        sliderProductos.scroll({
-            top: 0,
-            left: ScrollProductos+=40,
-            behavior: 'smooth'
-        });
     }
     console.log(prevUrl)
     console.log(ActualUrl)
