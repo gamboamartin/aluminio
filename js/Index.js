@@ -35,8 +35,7 @@ window.addEventListener('DOMContentLoaded', function () {
         bajar()
         prevUrl = ActualUrl;
     }
-    console.log(prevUrl)
-    console.log(ActualUrl)
+
 
 
     function subir() {
@@ -54,45 +53,50 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
-        console.log(value)
         if(value > 0 && value < 1000) {
             i = 0
             subir()
             bajar()
         }
-        if(value > 1000 && value < 7500) {
+        if(value > 1000 && value < 8500) {
             i = 1
             subir()
             bajar()
             ScrollYouTube = value - 1000;
-            for (var y = 0; y < sliderYouTube.length; y++) {
-                sliderYouTube[y].style.transform = `translate(-${ScrollYouTube}px)`
+            if(ScrollYouTube < 6500 ) {
+                for (var y = 0; y < sliderYouTube.length; y++) {
+                    sliderYouTube[y].style.transform = `translate(-${ScrollYouTube}px)`
+                }
             }
-           
         }
-        if(value > 7500 && value < 9600) {
+        if(value > 8500 && value < 11600) {
             i = 2
             subir()
             bajar()
-            ScrollProductos = value - 7600;
-            for (var y = 0; y < sliderProductos.length; y++) {
-                sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
+            ScrollProductos = value - 8500;
+            if(ScrollProductos < 2310 ) {
+                for (var y = 0; y < sliderProductos.length; y++) {
+                    sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
+                }  
             }
         }
-        if(value > 9600 && value < 10600) {
+        if(value > 11600 && value < 12600) {
             i = 3
             subir()
             bajar()
         }
-        if(value > 10600 && value < 15650) {
+        if(value > 12600 && value < 18650) {
             i = 4
             subir()
-            ScrollProceso = value - 10800;
-            for (var y = 0; y < sliderProceso.length; y++) {
-                sliderProceso[y].style.transform = `translate(-${ScrollProceso}px)`
+            bajar()
+            ScrollProceso = value - 12600;
+            if (ScrollProceso < 5000 ) {
+                for (var y = 0; y < sliderProceso.length; y++) {
+                    sliderProceso[y].style.transform = `translate(-${ScrollProceso}px)`
+                }
             }
         }
-        if(value > 15650 && value < 16650) {
+        if(value > 18650 && value < 19650) {
             i = 5
             subir()
             bajar()
