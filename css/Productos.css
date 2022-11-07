@@ -261,6 +261,9 @@
 .productos-open-main-section {
   width: 100vw;
   height: 100vh;
+  top: 0vh;
+  z-index: 0;
+  position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -288,11 +291,12 @@
   justify-content: center;
   gap: 5%;
 }
+
 .productos-open-slider-left {
   display: flex;
   padding-top: 5vh;
   gap: 5px;
-  overflow-x: scroll;
+  overflow-y: hidden;
   overscroll-behavior-y: contain;
   scroll-snap-type: y proximity;
   height: 100%;
@@ -305,7 +309,7 @@
   display: flex;
   padding-top: 0vh;
   gap: 5px;
-  overflow-x: hidden;
+  overflow-y: hidden;
   overscroll-behavior-y: contain;
   scroll-snap-type: y proximity;
   height: 100%;
@@ -314,7 +318,14 @@
   flex-direction: column;
 }
 
-.productos-open-card {
+.productos-open-card-R {
+  scroll-snap-align: center;
+  width: 60%;
+  min-height: 30vh;
+  border-radius: 3rem;
+}
+
+.productos-open-card-L {
   scroll-snap-align: center;
   width: 60%;
   min-height: 30vh;

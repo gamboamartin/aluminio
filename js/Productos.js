@@ -220,4 +220,18 @@
     }
 
 
+    let sliderProductosElementsR = document.getElementsByClassName("productos-open-card-R");
+    let sliderProductosElementsL = document.getElementsByClassName("productos-open-card-L");
+    let ScrollProductosElements;
 
+    window.addEventListener("scroll", function () {
+        value = this.window.scrollY
+        ScrollProductosElementsL = value;
+        for (var p = 0; p < sliderProductosElementsL.length; p++) {
+            sliderProductosElementsL[p].style.transform = `translateY(${ScrollProductosElementsL}px)`
+        }
+        ScrollProductosElementsR = value;
+        for (var j = 0; j < sliderProductosElementsR.length; j++) {
+            sliderProductosElementsR[j].style.transform = `translateY(-${ScrollProductosElementsR}px)`
+        }
+    })
