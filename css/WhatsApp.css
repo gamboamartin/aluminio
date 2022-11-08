@@ -3,7 +3,7 @@
     z-index: 100;
     width: 100vw;
     height: 8vh;
-    top: 95vh;
+    bottom: -3vh;
 }
 
 .whatsapp-botton-container {
