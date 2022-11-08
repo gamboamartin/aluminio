@@ -28,12 +28,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let prevUrl = document.referrer;
     let ActualUrl = location.origin + location.pathname;
-    console.log(prevUrl)
-    console.log(ActualUrl)
+
     if(prevUrl != ActualUrl)  {
         i = 2
         subir()
         bajar()
+        prevUrl = ActualUrl;
     }
 
 
@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', function () {
             i = 1
             subir()
             bajar()
-            ScrollYouTube = value - 1000;
+            ScrollYouTube = value - 2000;
             if(ScrollYouTube < 6500 ) {
                 for (var y = 0; y < sliderYouTube.length; y++) {
                     sliderYouTube[y].style.transform = `translate(-${ScrollYouTube}px)`
@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function () {
             i = 2
             subir()
             bajar()
-            ScrollProductos = value - 8500;
+            ScrollProductos = value - 9500;
             if(ScrollProductos < 2310 ) {
                 for (var y = 0; y < sliderProductos.length; y++) {
                     sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
@@ -85,18 +85,18 @@ window.addEventListener('DOMContentLoaded', function () {
             subir()
             bajar()
         }
-        if(value > 14600 && value < 20650) {
+        if(value > 14600 && value < 19650) {
             i = 4
             subir()
             bajar()
-            ScrollProceso = value - 12600;
+            ScrollProceso = value - 14600;
             if (ScrollProceso < 5000 ) {
                 for (var y = 0; y < sliderProceso.length; y++) {
                     sliderProceso[y].style.transform = `translate(-${ScrollProceso}px)`
                 }
             }
         }
-        if(value > 20650 && value < 21650) {
+        if(value > 19650 && value < 21650) {
             i = 5
             subir()
             bajar()
