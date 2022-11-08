@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="/css/Index.css">
     <link rel="stylesheet" href="/css/Productos.css">
     <link rel="stylesheet" href="/css/Header.css">
     <link rel="stylesheet" href="/css/Cotiza.css">
@@ -13,6 +12,40 @@
     <script src="/js/Productos.js"></script>
     <title>Domos y Techos</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+    
+    :root {
+        --fondo: #ececec;
+    }
+    
+    
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    main {
+        width: 100vw;
+        height: 350vh;
+        scroll-behavior: smooth;
+    }
+    
+    
+    
+    
+    .filtro-cortina {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background-color: var(--fondo);
+    }
+    </style>
 <body>
     <header class="header-main-container">
         <section class="header-logo-container">
@@ -59,7 +92,7 @@
           <div onclick="IrContacto()"class="diseño-banner-header">Contacto</div>
         </section>
     </header>
-    <main>
+    <main id="main-productos">
         <section class="productos-open-main-section">
             <div class="text-open-container">
                 <h1>Domos y Techos</h1>

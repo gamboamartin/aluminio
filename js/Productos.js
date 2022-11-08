@@ -224,6 +224,9 @@
     let sliderProductosElementsL = document.getElementsByClassName("productos-open-card-L");
     let ScrollProductosElements;
 
+   
+
+
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
         ScrollProductosElementsL = value;

@@ -140,7 +140,7 @@
 .main-text-clientes-container {
     width: 100vw;
     height: 30vh;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     align-items: flex-start;
@@ -181,6 +181,7 @@
 }
 
 .texto-container-box-1 {
+    
     display: flex;
     flex-direction: row;
 }
@@ -189,18 +190,22 @@
     width: 30%;
     font-size: 7rem;
     font-weight: 800;
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto-container-box :nth-child(2){
     width: 70%;
     font-size: 6rem;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto-under {
+    padding-top: 2vh;
     width: 100%;
     font-size: 6rem;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto-container-2 .texto-container-box {
@@ -211,14 +216,16 @@
     width: 100vw;
     font-size: 7rem;
     font-weight: 800;
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto-container-2 .texto-container-box :nth-child(2) {
     width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     font-size: 6rem;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 .texto-container-3 .texto-container-box {
     display: flex;
@@ -228,14 +235,16 @@
     width: 100vw;
     font-size: 7rem;
     font-weight: 800;
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto-container-3 .texto-container-box :nth-child(2) {
     width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     font-size: 6rem;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 

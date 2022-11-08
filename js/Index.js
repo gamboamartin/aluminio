@@ -28,12 +28,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let prevUrl = document.referrer;
     let ActualUrl = location.origin + location.pathname;
-
+    console.log(prevUrl)
+    console.log(ActualUrl)
     if(prevUrl != ActualUrl)  {
         i = 2
         subir()
         bajar()
-        prevUrl = ActualUrl;
     }
 
 

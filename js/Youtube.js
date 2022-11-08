@@ -1,6 +1,6 @@
 
 
-let pt = require("puppeteer")
+/*let pt = require("puppeteer")
 
 
 
@@ -42,3 +42,4 @@ async function getsubs(){
   getviews()
   getsubs()
  
+*/

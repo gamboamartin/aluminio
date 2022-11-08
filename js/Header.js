@@ -250,3 +250,8 @@
     function CerrarProducto() {
         location.href = "index.html"
     }
+
+
+
+
+    
