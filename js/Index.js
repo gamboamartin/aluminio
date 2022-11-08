@@ -29,12 +29,13 @@ window.addEventListener('DOMContentLoaded', function () {
     let prevUrl = document.referrer;
     let ActualUrl = location.origin + location.pathname;
 
+    /*
     if(prevUrl != ActualUrl)  {
         i = 2
         subir()
         bajar()
         prevUrl = ActualUrl;
-    }
+    }*/
 
 
 

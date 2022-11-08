@@ -104,42 +104,42 @@
   }
 
   .productos-card:nth-child(5) {
-    background-image: url("/assets/Productos/BARANDALES/1.jpg");
+    background-image: url("../assets/Productos/BARANDALES/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .productos-card:nth-child(3) {
-    background-image: url("/assets/Productos/CANCELESDEBAÑO/1.jpg");
+    background-image: url("../assets/Productos/CANCELESDEBAÑO/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .productos-card:nth-child(4) {
-    background-image: url("/assets/Productos/DOMOSYTECHOS/1.jpg");
+    background-image: url("../assets/Productos/DOMOSYTECHOS/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .productos-card:nth-child(6) {
-    background-image: url("/assets/Productos/PROYECTOSRESIDENCIALES/1.jpg");
+    background-image: url("../assets/Productos/PROYECTOSRESIDENCIALES/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .productos-card:nth-child(2) {
-    background-image: url("/assets/Productos/PUERTASDEALUMINIO/001.jpg");
+    background-image: url("../assets/Productos/PUERTASDEALUMINIO/001.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .productos-card:nth-child(1) {
-    background-image: url("/assets/Productos/VENTANASDEALUMINIO/0013.jpg");
+    background-image: url("../assets/Productos/VENTANASDEALUMINIO/0013.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
