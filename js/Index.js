@@ -53,12 +53,12 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
-        if(value > 0 && value < 1000) {
+        if(value > 0 && value < 2000) {
             i = 0
             subir()
             bajar()
         }
-        if(value > 1000 && value < 8500) {
+        if(value > 2000 && value < 9500) {
             i = 1
             subir()
             bajar()
@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
-        if(value > 8500 && value < 11600) {
+        if(value > 9500 && value < 12600) {
             i = 2
             subir()
             bajar()
@@ -80,12 +80,12 @@ window.addEventListener('DOMContentLoaded', function () {
                 }  
             }
         }
-        if(value > 11600 && value < 12600) {
+        if(value > 12600 && value < 14600) {
             i = 3
             subir()
             bajar()
         }
-        if(value > 12600 && value < 18650) {
+        if(value > 14600 && value < 20650) {
             i = 4
             subir()
             bajar()
@@ -96,7 +96,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
-        if(value > 18650 && value < 19650) {
+        if(value > 20650 && value < 21650) {
             i = 5
             subir()
             bajar()
