@@ -235,6 +235,6 @@
         }
         ScrollProductosElementsR = value;
         for (var j = 0; j < sliderProductosElementsR.length; j++) {
-            sliderProductosElementsR[j].style.transform = `translateY(-${ScrollProductosElementsR}px)`
+            sliderProductosElementsR[j].style.transform = `translateY(${-ScrollProductosElementsR}px)`
         }
     })
