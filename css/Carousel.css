@@ -18,11 +18,10 @@
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
-
 }
 
 .carousel-image-short {
-    min-width: 140vw !important;
+    min-width: 100vw !important;
     height: 100vh;
 }
 
