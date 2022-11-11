@@ -102,7 +102,6 @@ window.addEventListener('DOMContentLoaded', function () {
             subir()
             bajar()
         }
-        console.log(value)
         function subir() {
             paneles[i].classList.remove("bajar");
             paneles[i].classList.add("subir");
