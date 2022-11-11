@@ -59,50 +59,50 @@ window.addEventListener('DOMContentLoaded', function () {
             subir()
             bajar()
         }
-        if(value > 2000 && value < 9500) {
+        if(value > 2000 && value < 10500) {
             i = 1
             subir()
             bajar()
-            ScrollYouTube = value - 2000;
+            ScrollYouTube = value - 3100;
             if(ScrollYouTube < 6500 ) {
                 for (var y = 0; y < sliderYouTube.length; y++) {
                     sliderYouTube[y].style.transform = `translate(-${ScrollYouTube}px)`
                 }
             }
         }
-        if(value > 9500 && value < 12600) {
+        if(value > 10500 && value < 15600) {
             i = 2
             subir()
             bajar()
-            ScrollProductos = value - 9500;
+            ScrollProductos = value - 12500;
             if(ScrollProductos < 2310 ) {
                 for (var y = 0; y < sliderProductos.length; y++) {
                     sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
                 }  
             }
         }
-        if(value > 12600 && value < 14600) {
+        if(value > 15600 && value < 17600) {
             i = 3
             subir()
             bajar()
         }
-        if(value > 14600 && value < 19650) {
+        if(value > 17600 && value < 24600) {
             i = 4
             subir()
             bajar()
-            ScrollProceso = value - 14600;
+            ScrollProceso = value - 18600;
             if (ScrollProceso < 5000 ) {
                 for (var y = 0; y < sliderProceso.length; y++) {
                     sliderProceso[y].style.transform = `translate(-${ScrollProceso}px)`
                 }
             }
         }
-        if(value > 19650 && value < 21650) {
+        if(value > 24600 && value < 26600) {
             i = 5
             subir()
             bajar()
         }
-    
+        console.log(value)
         function subir() {
             paneles[i].classList.remove("bajar");
             paneles[i].classList.add("subir");
