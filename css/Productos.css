@@ -378,8 +378,8 @@
 
 #seccion-preguntas-frecuentes{
   display: block;
-  /*position: absolute;*/
-  bottom: 80%;
+  position: fixed;
+  bottom: 0%;
   background-color: #ececec;
   
   width: 100%;
