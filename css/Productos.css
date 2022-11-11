@@ -374,5 +374,90 @@
 }
 
 
+/* SECCION CANCELES DE BAÑO y VENTANAS DE ALUMINIO */
+
+#seccion-preguntas-frecuentes{
+  display: block;
+  /*position: absolute;*/
+  bottom: 80%;
+  background-color: #ececec;
+  
+  width: 100%;
+  height: 600px;
+}
+
+.diseño-boton-preguntas{
+  flex-direction: column;
+
+  background-color: #ececec;
+  
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 15px 15px 15px 15px rgba(102, 102, 102, 0.279);
+  width: 90vw;
+  height: 7vh;
+  margin-top: 40px;
+  margin-left: 5vw;
+  list-style: none;
+}
+
+.logo-plus{
+  width: 10vw;
+  float: right;
+}
+
+.texto-preguntas--texto{
+  font-size: 2.9rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  text-align:left;
+  padding-top: 43px;
+  padding-left: 30px;
+}
+
+.contenido-desplegable{
+  background-color: lightgrey;
+  border: 30px solid; 
+  border-radius: 15px;
+  border-width: 10px;
+  border-color: orange;
+
+  position:fixed relative;
+  top: 212px;
+  left: 50px;
+
+  width: 90%;
+  height: 53%;
+  display: block;
+  overflow: auto;
+
+}
+
+.menu-desplegable li:hover{
+  background-color: lightgrey;
+}
+
+.menu-desplegable li ul{
+  display: none;
+  position: fixed;
+
+}
+
+.menu-desplegable li:hover > ul{
+  display: block;
+}
+
+.texto-desplegable--texto{
+  list-style: none;
+  font-size: 2rem;
+  text-align: left;
+  
+  margin: 20px;
+}
+
+.texto-desplegable--texto strong{
+  font-size: 2rem;
+}
+
 
 
