@@ -7,6 +7,14 @@
 }
 
 
+@font-face {
+    font-family: Inpact;
+    src: url('/assets/Fonts/Impact-Font/impact.ttf'), 
+         url('/assets/Fonts/Impact-Font/Impacted.ttf'),
+         url('/assets/Fonts/Impact-Font/unicode.impact.ttf'),
+
+}
+
 * {
     margin: 0%;
     padding: 0%;
