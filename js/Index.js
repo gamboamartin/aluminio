@@ -82,19 +82,19 @@ window.addEventListener('DOMContentLoaded', function () {
                 }  
             }
              
-            if(sliderProductos > 250 && sliderProductos < 700) {
+            if(ScrollProductos > 250 && ScrollProductos < 700) {
                 indexProductos = 2
             }
-            if(sliderProductos > 700 && sliderProductos < 1100) {
+            if(ScrollProductos > 700 && ScrollProductos < 1100) {
                 indexProductos = 3
             }
-            if(sliderProductos > 1100 && sliderProductos < 1500) {
+            if(ScrollProductos > 1100 && ScrollProductos < 1500) {
                 indexProductos = 4
             }
-            if(sliderProductos > 1500 && sliderProductos < 2000) {
+            if(ScrollProductos > 1500 && ScrollProductos < 2000) {
                 indexProductos = 5
             }
-            if(sliderProductos > 2000 && sliderProductos < 3000) {
+            if(ScrollProductos > 2000 && ScrollProductos < 3000) {
                 indexProductos = 6
             }
     
@@ -120,10 +120,7 @@ window.addEventListener('DOMContentLoaded', function () {
               default:
                 seleccionar_1()
                 break;
-            }
-
- 
-            
+            }            
         }
         if(value > 15600 && value < 17600) {
             i = 3
