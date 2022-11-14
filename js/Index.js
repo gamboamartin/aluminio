@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
     let ScrollYouTube;
     let ScrollProductos;
     let ScrollProceso;
+    let indexProductos = 1;
 
     let prevUrl = document.referrer;
     let ActualUrl = location.origin + location.pathname;
@@ -74,12 +75,55 @@ window.addEventListener('DOMContentLoaded', function () {
             i = 2
             subir()
             bajar()
-            ScrollProductos = value - 12500;
+            ScrollProductos = value - 10500;
             if(ScrollProductos < 2310 ) {
                 for (var y = 0; y < sliderProductos.length; y++) {
                     sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
                 }  
             }
+             
+            if(sliderProductos > 250 && sliderProductos < 700) {
+                indexProductos = 2
+            }
+            if(sliderProductos > 700 && sliderProductos < 1100) {
+                indexProductos = 3
+            }
+            if(sliderProductos > 1100 && sliderProductos < 1500) {
+                indexProductos = 4
+            }
+            if(sliderProductos > 1500 && sliderProductos < 2000) {
+                indexProductos = 5
+            }
+            if(sliderProductos > 2000 && sliderProductos < 3000) {
+                indexProductos = 6
+            }
+    
+            switch (indexProductos) {
+              case 1:
+                seleccionar_1()
+                break;
+              case 2:
+                seleccionar_2()
+                break;
+              case 3:
+                seleccionar_3()
+                break;
+              case 4:
+                seleccionar_4()
+                break;
+              case 5:
+                seleccionar_5()
+                break;
+              case 6:
+                seleccionar_6()
+                break;
+              default:
+                seleccionar_1()
+                break;
+            }
+
+ 
+            
         }
         if(value > 15600 && value < 17600) {
             i = 3

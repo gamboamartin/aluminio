@@ -31,10 +31,10 @@
        
 
 
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-ventanasdealuminio.html"
-        }
+        //setInterval(link, 1500);
+        //function link() {
+        //    location.href = "productos-ventanasdealuminio.html"
+       // }
         
 
 
@@ -67,10 +67,10 @@
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
 
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-puertasdealuminio.html"
-        }
+        //setInterval(link, 1500);
+        //function link() {
+        //    location.href = "productos-puertasdealuminio.html"
+        //}
 
 
     }
@@ -103,10 +103,10 @@
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
 
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-cancelesdebaño.html"
-        }
+        //setInterval(link, 1500);
+        //function link() {
+        //    location.href = "productos-cancelesdebaño.html"
+        //}
 
 
     }
@@ -139,10 +139,10 @@
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
 
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-domosytechos.html"
-        }
+        //setInterval(link, 1500);
+       // function link() {
+        //    location.href = "productos-domosytechos.html"
+        //}
 
 
     }
@@ -175,10 +175,10 @@
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
 
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-barandales.html"
-        }
+        //setInterval(link, 1500);
+        //function link() {
+        //    location.href = "productos-barandales.html"
+        //}
 
 
     }
@@ -211,10 +211,10 @@
         var cardNotActive5 = document.getElementById("card-5");
         cardNotActive5.classList.add("not-active_5")
 
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-proyectoscomerciales.html"
-        }
+        //setInterval(link, 1500);
+        //function link() {
+        //    location.href = "productos-proyectoscomerciales.html"
+       // }
 
 
     }
