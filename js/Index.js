@@ -28,15 +28,24 @@ window.addEventListener('DOMContentLoaded', function () {
     let indexProductos = 1;
 
     let prevUrl = document.referrer;
-    let ActualUrl = location.origin + location.pathname;
 
-    /*
-    if(prevUrl != ActualUrl)  {
+    
+    if(prevUrl == "http://127.0.0.1:5500/productos-puertasdealuminio.html"      ||
+       prevUrl == "http://127.0.0.1:5500/productos-barandales.html"             ||
+       prevUrl == "http://127.0.0.1:5500/productos-cancelesdebaño.html"         ||
+       prevUrl == "http://127.0.0.1:5500/productos-domosytechos.html"           ||
+       prevUrl == "http://127.0.0.1:5500/productos-proyectoscomerciales.html"   ||
+       prevUrl == "http://127.0.0.1:5500/productos-ventanasdealuminio.html"   
+      )
+    {
         i = 2
         subir()
         bajar()
-        prevUrl = ActualUrl;
-    }*/
+    } else {
+        i = 0
+        subir()
+        bajar() 
+    }
 
 
 

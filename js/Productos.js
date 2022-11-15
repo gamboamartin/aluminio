@@ -177,46 +177,27 @@
     }
 
     function IrVent() {
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-ventanasdealuminio.html"
-        }
-  
+        location.href = "productos-ventanasdealuminio.html"   
     }
+
     function IrPuert() {
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-puertasdealuminio.html"
-        }
-  
+        location.href = "productos-puertasdealuminio.html"
     }
+
     function IrCance() {
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-cancelesdebaño.html"
-        }
+        location.href = "productos-cancelesdebaño.html"
     }
 
     function IrDomos() {
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-domosytechos.html"
-        }
-  
+        location.href = "productos-domosytechos.html" 
     }
 
     function IrBarand() {
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-barandales.html"
-        }
+        location.href = "productos-barandales.html"
     }
 
     function IrProyec() {
-        setInterval(link, 1500);
-        function link() {
-            location.href = "productos-proyectoscomerciales.html"
-        }
+        location.href = "productos-proyectoscomerciales.html"
     }
 
     let sliderProductosElementsR = document.getElementsByClassName("productos-open-card-R");
