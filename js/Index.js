@@ -64,37 +64,39 @@ window.addEventListener('DOMContentLoaded', function () {
             i = 1
             subir()
             bajar()
-            ScrollYouTube = value - 3100;
+            ScrollYouTube = value - 2500;
             if(ScrollYouTube < 6500 ) {
                 for (var y = 0; y < sliderYouTube.length; y++) {
-                    sliderYouTube[y].style.transform = `translate(-${ScrollYouTube}px)`
+                    sliderYouTube[y].style.transform = `translate(${-ScrollYouTube}px)`
                 }
             }
         }
-        if(value > 10500 && value < 15600) {
+        if(value > 10500 && value < 13600) {
             i = 2
             subir()
             bajar()
-            ScrollProductos = value - 10500;
+            ScrollProductos = value - 11000;
             if(ScrollProductos < 2310 ) {
                 for (var y = 0; y < sliderProductos.length; y++) {
-                    sliderProductos[y].style.transform = `translate(-${ScrollProductos}px)`
+                    sliderProductos[y].style.transform = `translate(${-ScrollProductos}px)`
                 }  
             }
-             
-            if(ScrollProductos > 250 && ScrollProductos < 700) {
+            if( ScrollProductos < 250) {
+                indexProductos = 1
+            }
+            if(ScrollProductos > 230 && ScrollProductos < 700) {
                 indexProductos = 2
             }
-            if(ScrollProductos > 700 && ScrollProductos < 1100) {
+            if(ScrollProductos > 680 && ScrollProductos < 1100) {
                 indexProductos = 3
             }
-            if(ScrollProductos > 1100 && ScrollProductos < 1500) {
+            if(ScrollProductos > 1100 && ScrollProductos < 1400) {
                 indexProductos = 4
             }
-            if(ScrollProductos > 1500 && ScrollProductos < 2000) {
+            if(ScrollProductos > 1400 && ScrollProductos < 1700) {
                 indexProductos = 5
             }
-            if(ScrollProductos > 2000 && ScrollProductos < 3000) {
+            if(ScrollProductos > 1700 && ScrollProductos < 2300) {
                 indexProductos = 6
             }
     
@@ -122,23 +124,24 @@ window.addEventListener('DOMContentLoaded', function () {
                 break;
             }            
         }
-        if(value > 15600 && value < 17600) {
+        if(value > 13600 && value < 15600) {
             i = 3
             subir()
             bajar()
         }
-        if(value > 17600 && value < 24600) {
+        if(value > 15600 && value < 22600) {
             i = 4
             subir()
             bajar()
-            ScrollProceso = value - 18600;
-            if (ScrollProceso < 5000 ) {
+            ScrollProceso = value - 16100;
+            if (ScrollProceso < 5000) {
                 for (var y = 0; y < sliderProceso.length; y++) {
-                    sliderProceso[y].style.transform = `translate(-${ScrollProceso}px)`
+                    sliderProceso[y].style.transform = `translate(${-ScrollProceso}px)`
                 }
             }
         }
-        if(value > 24600 && value < 26600) {
+        
+        if(value > 22600 && value < 24600) {
             i = 5
             subir()
             bajar()

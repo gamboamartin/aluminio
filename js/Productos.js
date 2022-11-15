@@ -26,19 +26,8 @@
         cardNotActive5.classList.add("not-active_5")
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
-
-
-       
-
-
-        //setInterval(link, 1500);
-        //function link() {
-        //    location.href = "productos-ventanasdealuminio.html"
-       // }
-        
-
-
     }
+
     function seleccionar_2() {
         var cardActive2 = document.getElementById("card-2");
         cardActive2.classList.add("active_2")
@@ -66,14 +55,8 @@
         cardNotActive5.classList.add("not-active_5")
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
-
-        //setInterval(link, 1500);
-        //function link() {
-        //    location.href = "productos-puertasdealuminio.html"
-        //}
-
-
     }
+
     function seleccionar_3() {
         var cardActive3 = document.getElementById("card-3");
         cardActive3.classList.add("active_3")
@@ -102,14 +85,8 @@
         cardNotActive5.classList.add("not-active_5")
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
-
-        //setInterval(link, 1500);
-        //function link() {
-        //    location.href = "productos-cancelesdebaño.html"
-        //}
-
-
     }
+
     function seleccionar_4() {
         var cardActive4 = document.getElementById("card-4");
         cardActive4.classList.add("active_4")
@@ -138,14 +115,8 @@
         cardNotActive5.classList.add("not-active_5")
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
-
-        //setInterval(link, 1500);
-       // function link() {
-        //    location.href = "productos-domosytechos.html"
-        //}
-
-
     }
+
     function seleccionar_5() {
         var cardActive5 = document.getElementById("card-5");
         cardActive5.classList.add("active_5")
@@ -174,13 +145,6 @@
         cardNotActive4.classList.add("not-active_4")
         var cardNotActive6 = document.getElementById("card-6");
         cardNotActive6.classList.add("not-active_6")
-
-        //setInterval(link, 1500);
-        //function link() {
-        //    location.href = "productos-barandales.html"
-        //}
-
-
     }
     function seleccionar_6() {
         var cardActive6 = document.getElementById("card-6");
@@ -210,15 +174,50 @@
         cardNotActive4.classList.add("not-active_4")
         var cardNotActive5 = document.getElementById("card-5");
         cardNotActive5.classList.add("not-active_5")
-
-        //setInterval(link, 1500);
-        //function link() {
-        //    location.href = "productos-proyectoscomerciales.html"
-       // }
-
-
     }
 
+    function IrVent() {
+        setInterval(link, 1500);
+        function link() {
+            location.href = "productos-ventanasdealuminio.html"
+        }
+  
+    }
+    function IrPuert() {
+        setInterval(link, 1500);
+        function link() {
+            location.href = "productos-puertasdealuminio.html"
+        }
+  
+    }
+    function IrCance() {
+        setInterval(link, 1500);
+        function link() {
+            location.href = "productos-cancelesdebaño.html"
+        }
+    }
+
+    function IrDomos() {
+        setInterval(link, 1500);
+        function link() {
+            location.href = "productos-domosytechos.html"
+        }
+  
+    }
+
+    function IrBarand() {
+        setInterval(link, 1500);
+        function link() {
+            location.href = "productos-barandales.html"
+        }
+    }
+
+    function IrProyec() {
+        setInterval(link, 1500);
+        function link() {
+            location.href = "productos-proyectoscomerciales.html"
+        }
+    }
 
     let sliderProductosElementsR = document.getElementsByClassName("productos-open-card-R");
     let sliderProductosElementsL = document.getElementsByClassName("productos-open-card-L");
