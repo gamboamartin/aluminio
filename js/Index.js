@@ -24,10 +24,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let value = 0;
     let i = 0;
-    let ScrollYouTube;
-    let ScrollProductos;
-    let ScrollProceso;
-    let indexProductos = 1;
 
     let prevUrl = document.referrer;
 
@@ -43,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function () {
         i = 2
         subir()
         bajar()
-        this.window.scroll(0, 10501)
+        this.window.scroll(0, 6001)
     } else {
         i = 0
         subir()
@@ -82,49 +78,6 @@ window.addEventListener('DOMContentLoaded', function () {
             i = 2
             subir()
             bajar()
-            ScrollProductos = value - 4000;
-            if( ScrollProductos < 500) {
-                indexProductos = 1
-            }
-            if(ScrollProductos > 500 && ScrollProductos < 1000) {
-                indexProductos = 2
-            }
-            if(ScrollProductos > 1500 && ScrollProductos < 2000) {
-                indexProductos = 3
-            }
-            if(ScrollProductos > 2500 && ScrollProductos < 3000) {
-                indexProductos = 4
-            }
-            if(ScrollProductos > 3500 && ScrollProductos < 4000) {
-                indexProductos = 5
-            }
-            if(ScrollProductos > 4500 && ScrollProductos < 5000) {
-                indexProductos = 6
-            }
-    
-            switch (indexProductos) {
-              case 1:
-                seleccionar_1()
-                break;
-              case 2:
-                seleccionar_2()
-                break;
-              case 3:
-                seleccionar_3()
-                break;
-              case 4:
-                seleccionar_4()
-                break;
-              case 5:
-                seleccionar_5()
-                break;
-              case 6:
-                seleccionar_6()
-                break;
-              default:
-                seleccionar_1()
-                break;
-            }            
         }
         if(value > 6000 && value < 8000) {
             i = 3
