@@ -50,11 +50,27 @@
   max-width: 300px;
 }
 
+@keyframes AutoPlay {
+  0% {
+      transform: translate(0px);
+  }
+  
+  50% {
+      transform: translate(-200px);
+  }
+
+  100% {
+      transform: translate(0px);
+  }
+}
+
 .proceso-slider-card-image {
   width: 100vw;
   height: 60vh;
   display: flex;
   align-items: center;
+  animation-duration: 2s;
+  animation-name: AutoPlay;
 }
 
 .proceso-slider-card-image img{

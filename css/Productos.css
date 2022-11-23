@@ -95,6 +95,8 @@
   }
 
   .productos-card {
+    animation-duration: 2s;
+    animation-name: AutoPlay;
     scroll-snap-align: center;
     min-width: 420px;
     height: 60vh;
@@ -105,6 +107,20 @@
     flex-direction: row;
     justify-content: center;
   }
+
+  @keyframes AutoPlay {
+    0% {
+        transform: translate(0px);
+    }
+    
+    50% {
+        transform: translate(-200px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
 
   .productos-card:nth-child(5) {
     background-image: url("../assets/Productos/BARANDALES/1.jpg");
@@ -323,14 +339,14 @@
 
 .productos-open-card-R {
   scroll-snap-align: center;
-  width: 60%;
+  width: 80%;
   min-height: 30vh;
   border-radius: 3rem;
 }
 
 .productos-open-card-L {
   scroll-snap-align: center;
-  width: 60%;
+  width: 80%;
   min-height: 30vh;
   border-radius: 3rem;
 }
@@ -339,7 +355,7 @@
   width: 20vw;
   height: 5vh;
   border-radius: 50%;
-  margin-left: 80vw;
+  margin-left: 95vw;
 
 }
 
@@ -363,17 +379,20 @@
 .pregunta-frecuente-abrir h1{
   color: rgb(0, 0, 0);
   font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pregunta-frecuente-abrir :nth-child(1) {
   font-size: 2rem;
   width: 70vw;
   padding-left: 5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pregunta-frecuente-abrir :nth-child(2) {
   font-size: 3rem;
   width: 10vw;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -415,7 +434,8 @@
   letter-spacing: 1px;
   text-align:left;
   padding-top: 43px;
-  padding-left: 30px;
+  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contenido-desplegable{
@@ -426,15 +446,20 @@
   border-color: orange;
 
   position:fixed relative;
-  top: 212px;
+  bottom: -490px;
   left: 50px;
-
   width: 90%;
   height: 53%;
   display: block;
   overflow: auto;
 
 }
+
+.menu-desplegable {
+  width: 100vw;
+  height: 60vh;
+}
+
 
 .menu-desplegable li:hover{
   background-color: lightgrey;
@@ -454,12 +479,14 @@
   list-style: none;
   font-size: 2rem;
   text-align: left;
+  font-family: 'Poppins', sans-serif;
   
   margin: 20px;
 }
 
 .texto-desplegable--texto strong{
   font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 

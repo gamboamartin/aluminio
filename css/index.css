@@ -25,7 +25,7 @@
 
 main {
     width: 100vw;
-    height: 1000vh;
+    height: 500vh;
     scroll-behavior: smooth;
 }
 
@@ -39,4 +39,5 @@ main {
     z-index: 10;
     background-color: var(--fondo);
 }
+
 

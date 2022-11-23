@@ -80,6 +80,8 @@
 }
 
 .videos-container--card {
+    animation-duration: 2s;
+    animation-name: AutoPlay;
     margin-top: 10%;
     scroll-snap-align: center;
     width: 70vw;
@@ -89,6 +91,20 @@
     background-color: aqua;
     border-radius: 3rem;
     box-shadow: 0 4px 8px rgb(90, 73, 30, 0.16);
+}
+
+@keyframes AutoPlay {
+    0% {
+        transform: translate(0px);
+    }
+    
+    50% {
+        transform: translate(-200px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
 }
 
 .videos-container--card img {

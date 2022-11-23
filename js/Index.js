@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function () {
         i = 2
         subir()
         bajar()
-        this.window.scroll(0, 6001)
+        this.window.scroll(0, 2001)
     } else {
         i = 0
         subir()
