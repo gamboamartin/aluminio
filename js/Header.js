@@ -166,6 +166,44 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
+        this.window.scroll(0, 13601)
+        cerrarmenu()
+    }
+
+    function IrNosotros() {
+        var Carousel = document.getElementById("Carousel");
+        var Youtube = document.getElementById("Youtube");
+        var Productos = document.getElementById("Productos");
+        var Clientes = document.getElementById("Clientes");
+        var Proceso = document.getElementById("Proceso");
+        var Contacto = document.getElementById("Contacto");
+    
+        const paneles = [
+            Carousel, 
+            Youtube, 
+            Productos, 
+            Clientes, 
+            Proceso, 
+            Contacto
+        ]
+        paneles[3].classList.remove("bajar");
+        paneles[3].classList.add("subir");
+
+        paneles[5].classList.remove("subir");
+        paneles[5].classList.add("bajar");
+        
+        paneles[4].classList.remove("subir");
+        paneles[4].classList.add("bajar");
+
+        paneles[0].classList.remove("subir");
+        paneles[0].classList.add("bajar");
+
+        paneles[2].classList.remove("subir");
+        paneles[2].classList.add("bajar");
+
+        paneles[1].classList.remove("subir");
+        paneles[1].classList.add("bajar");
+
         this.window.scroll(0, 15601)
         cerrarmenu()
     }

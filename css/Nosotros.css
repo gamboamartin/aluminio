@@ -1,0 +1,161 @@
+.Nosotros {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo);
+    position: fixed;
+    z-index: 5;
+    top: 100vh;
+}
+
+.nosotros-text {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 200;
+    width: 100vw;
+    height: 15vh;
+    padding-top: 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nosotros-img-container {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.nosotros-img-container .nosotros-img-container--img {
+    width: 40%;
+    height: 90%;
+}
+
+.nosotros-text-container {
+    width: 80vw;
+    margin-left: 5vw;
+    margin-right: 10rem;
+    height: 50vh;
+}
+
+.nosotros-text-area-one {
+    width: 100vw;
+    height: 22vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: hidden;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+}
+
+.nosotros-text-area-two {
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: hidden;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+}
+
+.nosotros-text-area-one h1 {
+    width: 90vw;
+    text-align: center;
+    font-size: 10rem;
+    padding-bottom: 30%;
+    animation-name: text-moving-one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.nosotros-text-area-two :nth-child(1) {
+    padding-top: 50%;
+    width: 90vw;
+    text-align: center;
+    font-size: 7rem;
+    animation-name: text-moving-one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.nosotros-text-area-two :nth-child(2) {
+    padding-top: 40%;
+    width: 90vw;
+    text-align: center;
+    font-size: 8rem;
+    animation-name: text-moving-one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes text-moving-one {
+    0% {
+        transform: translate( 0, 0rem);
+    }
+
+    20% {
+        transform: translate( 0, 0rem);
+    }
+
+    30% {
+        transform: translate( 0, -50rem);
+    }
+
+    50% {
+        transform: translate( 0, -50rem);
+    }
+
+    70% {
+        transform: translate( 0, -110rem);
+    }
+
+    90% {
+        transform: translate( 0, -110rem);
+    }
+
+    100% {
+        transform: translate( 0, 0rem);
+    }
+    
+
+}
+
+@keyframes subir {
+    from {
+        top: 100vh;
+    }
+    
+    to {
+        top: 0vh;
+    }
+
+}
+
+@keyframes bajar {
+    0% {
+        top: 0vh;
+    }
+    
+    100% {
+        top: 100vh;
+    }
+}
+
+
+.subir {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: subir;
+    z-index: 11;
+}
+
+.bajar {
+    top: 0vh;
+    animation-duration: 1s;
+    animation-name: bajar;
+    z-index: 0;
+    display: none;
+}
+

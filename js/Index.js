@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var Youtube = document.getElementById("Youtube");
     var Productos = document.getElementById("Productos");
     var Clientes = document.getElementById("Clientes");
+    var Nosotros = document.getElementById("Nosotros");
     var Proceso = document.getElementById("Proceso");
     var Contacto = document.getElementById("Contacto");
     //Elementos de scroll hibrido
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', function () {
         Youtube, 
         Productos, 
         Clientes, 
+        Nosotros,
         Proceso, 
         Contacto
     ]
@@ -140,11 +142,16 @@ window.addEventListener('DOMContentLoaded', function () {
             subir()
             bajar()
         }
-        if(value > 15600 && value < 22600) {
+        if(value > 15600 && value < 17600) {
             i = 4
             subir()
             bajar()
-            ScrollProceso = value - 16100;
+        }
+        if(value > 17600 && value < 24600) {
+            i = 5
+            subir()
+            bajar()
+            ScrollProceso = value - 18610;
             if (ScrollProceso < 5000) {
                 for (var y = 0; y < sliderProceso.length; y++) {
                     sliderProceso[y].style.transform = `translate(${-ScrollProceso}px)`
@@ -152,8 +159,8 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
         
-        if(value > 22600 && value < 24600) {
-            i = 5
+        if(value > 24600 && value < 26600) {
+            i = 6
             subir()
             bajar()
         }
@@ -163,7 +170,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     
         function bajar() {
-            for (var j = 0; j < 6; j++) {
+            for (var j = 0; j < paneles.length; j++) {
                 if(i != j) {
                     paneles[j].classList.remove("subir");
                     paneles[j].classList.add("bajar");
