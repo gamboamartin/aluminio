@@ -80,7 +80,7 @@
     justify-content: center;
     gap: 3rem;
     height: 70vh;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     align-items: flex-start;

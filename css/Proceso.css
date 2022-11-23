@@ -37,7 +37,7 @@
   display: flex;
   gap: 5px;
   height: 70vh;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
