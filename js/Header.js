@@ -89,7 +89,7 @@
         paneles[0].classList.remove("subir");
         paneles[0].classList.add("bajar");
 
-        this.window.scroll(0, 2001)
+        this.window.scroll(0, 1001)
         cerrarmenu()
     }
 
@@ -127,7 +127,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, 4001)
+        this.window.scroll(0, 2001)
         cerrarmenu()
     }
 
@@ -166,7 +166,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, 6001)
+        this.window.scroll(0, 3001)
         cerrarmenu()
     }
 
@@ -204,7 +204,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, 8001)
+        this.window.scroll(0, 4001)
         cerrarmenu()
     }
 
@@ -242,7 +242,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, 10001)
+        this.window.scroll(0, 5001)
         cerrarmenu()
     }
 
@@ -280,7 +280,7 @@
         paneles[1].classList.remove("subir");
         paneles[1].classList.add("bajar");
 
-        this.window.scroll(0, 12001)
+        this.window.scroll(0, 6001)
         cerrarmenu()
     }
 

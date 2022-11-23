@@ -64,38 +64,38 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     window.addEventListener("scroll", function () {
         value = this.window.scrollY
-        if(value > 0 && value < 2000) {
+        if(value > 0 && value < 1000) {
             i = 0
             subir()
             bajar()
         }
-        if(value > 2000 && value < 4000) {
+        if(value > 1000 && value < 2000) {
             i = 1
             subir()
             bajar()
         }
-        if(value > 4000 && value < 6000) {
+        if(value > 2000 && value < 3000) {
             i = 2
             subir()
             bajar()
         }
-        if(value > 6000 && value < 8000) {
+        if(value > 3000 && value < 4000) {
             i = 3
             subir()
             bajar()
         }
-        if(value > 8000 && value < 10000) {
+        if(value > 4000 && value < 5000) {
             i = 4
             subir()
             bajar()
         }
-        if(value > 10000 && value < 12000) {
+        if(value > 5000 && value < 6000) {
             i = 5
             subir()
             bajar()
         }
         
-        if(value > 12000 && value < 14000) {
+        if(value > 6000 && value < 7000) {
             i = 6
             subir()
             bajar()
