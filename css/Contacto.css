@@ -150,6 +150,9 @@
 
 .diseño-botones-privydesc {
     height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 35vw;
     margin-top: 4vh;
     background-color: rgb(240, 125, 17);
@@ -162,9 +165,12 @@
     color: white;
     font-size: 3rem;
     text-align: center;
+    
+    
 }
 
 .descarga-garantia--texto {
+    text-align: center;
     color: white;
     font-size: 3rem;
     text-align: center;
